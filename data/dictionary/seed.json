@@ -1,0 +1,142 @@
+[
+  {
+    "id": "air",
+    "english": "air",
+    "hindi": "हवा",
+    "santali_ol_chiki": "ᱦᱚᱭ",
+    "pronunciation": "Hoy",
+    "meaning": "Plants and people need air to live.",
+    "category": "element",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "flower",
+    "english": "flower",
+    "hindi": "फूल",
+    "santali_ol_chiki": "ᱵᱟᱦᱟ",
+    "pronunciation": "Ba-haa",
+    "meaning": "Flowers are colourful and grow into seeds and fruits.",
+    "category": "plant-part",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "fruit",
+    "english": "fruit",
+    "hindi": "फल",
+    "santali_ol_chiki": "ᱡᱚ",
+    "pronunciation": "Jo",
+    "meaning": "Fruit protects the seeds inside it.",
+    "category": "plant-part",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "grow",
+    "english": "grow",
+    "hindi": "बढ़ना",
+    "santali_ol_chiki": "ᱵᱟᱲᱟᱭ",
+    "pronunciation": "Bah-raay",
+    "meaning": "Grow means to get bigger and taller, like a seed becoming a plant.",
+    "category": "action",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "leaf",
+    "english": "leaf",
+    "hindi": "पत्ती",
+    "santali_ol_chiki": "ᱥᱟᱠᱟᱢ",
+    "pronunciation": "Sa-kaam",
+    "meaning": "Leaves use sunlight, air, and water to make food for the plant.",
+    "category": "plant-part",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "need",
+    "english": "need",
+    "hindi": "जरूरत",
+    "santali_ol_chiki": "ᱵᱟᱹᱱᱩᱜ",
+    "pronunciation": "Baa-nug",
+    "meaning": "To need something means it is necessary, like plants need sunlight.",
+    "category": "action",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "plant",
+    "english": "plant",
+    "hindi": "पौधा",
+    "santali_ol_chiki": "ᱫᱟᱨᱮ",
+    "pronunciation": "Da-re",
+    "meaning": "A plant is a living thing that grows in soil and needs sunlight, water, and air.",
+    "category": "plant",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "root",
+    "english": "root",
+    "hindi": "जड़",
+    "santali_ol_chiki": "ᱨᱮᱦᱮᱫ",
+    "pronunciation": "Reh-hed",
+    "meaning": "Roots hold the plant in the soil and take in water and nutrients.",
+    "category": "plant-part",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "seed",
+    "english": "seed",
+    "hindi": "बीज",
+    "santali_ol_chiki": "ᱡᱟᱝ",
+    "pronunciation": "Jaang",
+    "meaning": "A seed can grow into a new plant.",
+    "category": "plant-part",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "soil",
+    "english": "soil",
+    "hindi": "मिट्टी",
+    "santali_ol_chiki": "ᱦᱟᱥᱟ",
+    "pronunciation": "Ha-sa",
+    "meaning": "Soil is the earth in which roots grow.",
+    "category": "element",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "stem",
+    "english": "stem",
+    "hindi": "तना",
+    "santali_ol_chiki": "ᱜᱚᱜᱚ",
+    "pronunciation": "Go-go",
+    "meaning": "The stem carries water from the roots up to the rest of the plant.",
+    "category": "plant-part",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "sun",
+    "english": "sun",
+    "hindi": "सूरज",
+    "santali_ol_chiki": "ᱥᱤᱧ",
+    "pronunciation": "Sin",
+    "meaning": "The sun gives light and warmth to the earth.",
+    "category": "element",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "sunlight",
+    "english": "sunlight",
+    "hindi": "धूप",
+    "santali_ol_chiki": "ᱥᱮᱛᱟᱜ",
+    "pronunciation": "See-toong",
+    "meaning": "Leaves use sunlight to make the plant's food.",
+    "category": "element",
+    "lesson": "lesson-parts-of-a-plant"
+  },
+  {
+    "id": "water",
+    "english": "water",
+    "hindi": "पानी",
+    "santali_ol_chiki": "ᱫᱟᱜ",
+    "pronunciation": "Daag",
+    "meaning": "Plants need water to grow and stay healthy.",
+    "category": "element",
+    "lesson": "lesson-parts-of-a-plant"
+  }
+]

@@ -1,0 +1,540 @@
+[
+  {
+    "_id": "worksheet-parts-of-a-plant",
+    "title": "Parts of a Plant",
+    "lesson": "parts-of-a-plant",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which part holds the plant in the soil?",
+        "options": [
+          "Leaf",
+          "Root",
+          "Flower",
+          "Fruit"
+        ],
+        "correct_option": "Root",
+        "concept": "root"
+      },
+      {
+        "id": "q2",
+        "prompt": "Which part carries water from the roots to the rest of the plant?",
+        "options": [
+          "Stem",
+          "Seed",
+          "Petal",
+          "Flower"
+        ],
+        "correct_option": "Stem",
+        "concept": "stem"
+      },
+      {
+        "id": "q3",
+        "prompt": "Which part helps the plant make its own food?",
+        "options": [
+          "Root",
+          "Fruit",
+          "Leaf",
+          "Seed"
+        ],
+        "correct_option": "Leaf",
+        "concept": "leaf"
+      },
+      {
+        "id": "q4",
+        "prompt": "Which part of the plant makes seeds?",
+        "options": [
+          "Flower",
+          "Stem",
+          "Root",
+          "Water"
+        ],
+        "correct_option": "Flower",
+        "concept": "flower"
+      },
+      {
+        "id": "q5",
+        "prompt": "What protects the seeds inside a plant?",
+        "options": [
+          "Leaf",
+          "Root",
+          "Fruit",
+          "Sunlight"
+        ],
+        "correct_option": "Fruit",
+        "concept": "fruit"
+      }
+    ]
+  },
+  {
+    "_id": "generated-4-mcq-394d96",
+    "title": "पौधों के अंगों पर 4 Mcq प्रश्न बनाओ — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "prompt": "पौधों के अंगों में से किसका प्राथमिक रूप मुख्य है?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "A",
+        "concept": "अंगों",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q2",
+        "type": "mcq",
+        "prompt": "पौधे की तुलना में, किसका गोभी अधिक आंगन है?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "B",
+        "concept": "आंगन",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q3",
+        "type": "mcq",
+        "prompt": "पौधों की तुलना में, किसके लिए गाढ़ीया आंगन है?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "C",
+        "concept": "आंगन",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q4",
+        "type": "mcq",
+        "prompt": "पौधों के अंगों में से किसका लहरी आंगन है?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "D",
+        "concept": "आंगन",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q5",
+        "type": "short-answer",
+        "prompt": "पौधों के अंगों में से किसका प्राथमिक रूप है?",
+        "options": [],
+        "correct_option": "",
+        "concept": "general",
+        "difficulty": "medium"
+      }
+    ],
+    "generated": true
+  },
+  {
+    "_id": "generated-4-mcq-28c220",
+    "title": "पौधों के अंगों पर 4 Mcq प्रश्न बनाओ — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "prompt": "पौधों के अंगों में से किसका उदाहरण है?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "A",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q2",
+        "type": "mcq",
+        "prompt": "पौधों के अंगों में से कैसे प्रतिबिम्ब उत्पन्न होता है?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "B",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q3",
+        "type": "mcq",
+        "prompt": "पौधों के अंगों में से किसका उदाहरण है 'तीन' रंग का चादनी?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "C",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q4",
+        "type": "mcq",
+        "prompt": "पौधों के अंगों में से किसका उदाहरण है 'चादनी'?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "D",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q5",
+        "type": "short-answer",
+        "prompt": "पौधों के अंगों में से किसकी उदाहरण है 'तीन' रंग का चादनी?",
+        "options": [],
+        "correct_option": "",
+        "concept": "general",
+        "difficulty": "medium"
+      }
+    ],
+    "generated": true
+  },
+  {
+    "_id": "generated-3-mcq-856fdd",
+    "title": "पौधों के बीज पर 3 Mcq प्रश्न बनाओ — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "prompt": "पौधों के बीज क्या होते हैं?",
+        "options": [
+          "A. पौधों की तरह से जन्मिए",
+          "B. दुसरे पौधों से उत्पन्न होते हैं",
+          "C. बाग में खेलने की तलाश के लिए जा रहे हैं",
+          "D. पौधों के साथ अलग होते हैं"
+        ],
+        "correct_option": "A",
+        "concept": "पौधों के बीज पर जानकारी",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q2",
+        "type": "mcq",
+        "prompt": "बीज को किसने से जुड़ा होता है?",
+        "options": [
+          "A. पौधों",
+          "B. गर्मी",
+          "C. बहाना",
+          "D. दूध"
+        ],
+        "correct_option": "A",
+        "concept": "पौधों के बीज पर जानकारी",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q3",
+        "type": "mcq",
+        "prompt": "बीज किसने से उत्पन्न होता है?",
+        "options": [
+          "A. पौध",
+          "B. दही",
+          "C. बहाना",
+          "D. गरमी"
+        ],
+        "correct_option": "A",
+        "concept": "पौधों के बीज पर जानकारी",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q4",
+        "type": "short-answer",
+        "prompt": "बीज किसने से उत्पन्न होता है?",
+        "options": [],
+        "correct_option": "",
+        "concept": "general",
+        "difficulty": "medium"
+      }
+    ],
+    "generated": true
+  },
+  {
+    "_id": "generated-3-mcq-7ce3de",
+    "title": "पौधों के बीज पर 3 Mcq प्रश्न बनाओ — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "prompt": "कौन सा विकल्प सही है कि पौधे के बीज को कैसे जाना चाहिए?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "A",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q2",
+        "type": "mcq",
+        "prompt": "पौधे के बीज किसके साथ जुड़ते होते हैं?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "B",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q3",
+        "type": "mcq",
+        "prompt": "पौधे के बीज किसको से जुड़ते हैं?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "C",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q4",
+        "type": "short-answer",
+        "prompt": "पौधे के बीज किसको से जुड़ते हैं? उसका व्याख्या दीजिए।",
+        "options": [],
+        "correct_option": "",
+        "concept": "general",
+        "difficulty": "medium"
+      }
+    ],
+    "generated": true
+  },
+  {
+    "_id": "generated-3-mcq-b81b48",
+    "title": "पौधों पर 3 Mcq प्रश्न बनाओ — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "gq1",
+        "type": "mcq",
+        "prompt": "Which part of the plant takes in water from the soil?",
+        "options": [
+          "Leaf",
+          "Root",
+          "Flower",
+          "Fruit"
+        ],
+        "correct_option": "Root",
+        "concept": "root",
+        "difficulty": "easy"
+      },
+      {
+        "id": "gq2",
+        "type": "mcq",
+        "prompt": "Which part helps the plant make food using sunlight?",
+        "options": [
+          "Root",
+          "Stem",
+          "Leaf",
+          "Seed"
+        ],
+        "correct_option": "Leaf",
+        "concept": "leaf",
+        "difficulty": "easy"
+      },
+      {
+        "id": "gq3",
+        "type": "mcq",
+        "prompt": "What do flowers help the plant make?",
+        "options": [
+          "Water",
+          "Seeds",
+          "Soil",
+          "Sunlight"
+        ],
+        "correct_option": "Seeds",
+        "concept": "flower",
+        "difficulty": "easy"
+      },
+      {
+        "id": "gq4",
+        "type": "short",
+        "prompt": "In one sentence, why do plants need sunlight?",
+        "options": [],
+        "correct_option": "Plants use sunlight to make their own food.",
+        "concept": "sunlight",
+        "difficulty": "easy"
+      }
+    ],
+    "generated": true
+  },
+  {
+    "_id": "generated-2-mcq-b5dfff",
+    "title": "पौधों पर 2 Mcq प्रश्न बनाओ — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "gq1",
+        "type": "mcq",
+        "prompt": "Which part of the plant takes in water from the soil?",
+        "options": [
+          "Leaf",
+          "Root",
+          "Flower",
+          "Fruit"
+        ],
+        "correct_option": "Root",
+        "concept": "root",
+        "difficulty": "easy"
+      },
+      {
+        "id": "gq2",
+        "type": "mcq",
+        "prompt": "Which part helps the plant make food using sunlight?",
+        "options": [
+          "Root",
+          "Stem",
+          "Leaf",
+          "Seed"
+        ],
+        "correct_option": "Leaf",
+        "concept": "leaf",
+        "difficulty": "easy"
+      },
+      {
+        "id": "gq3",
+        "type": "mcq",
+        "prompt": "What do flowers help the plant make?",
+        "options": [
+          "Water",
+          "Seeds",
+          "Soil",
+          "Sunlight"
+        ],
+        "correct_option": "Seeds",
+        "concept": "flower",
+        "difficulty": "easy"
+      },
+      {
+        "id": "gq4",
+        "type": "short",
+        "prompt": "In one sentence, why do plants need sunlight?",
+        "options": [],
+        "correct_option": "Plants use sunlight to make their own food.",
+        "concept": "sunlight",
+        "difficulty": "easy"
+      }
+    ],
+    "generated": true
+  },
+  {
+    "_id": "generated-5-c125ca",
+    "title": "पानी (जल) के पाठ पर 5 बहुविकल्पीय प्रश्न बनाओ। पानी के उपयोग, पीने के पानी, पानी बचाने और हमारे दैनिक जीवन में पानी के महत्व पर प्रश्न शामिल करो। प्रश्न प्राथमिक कक्षा के बच्चों के लिए सरल हिंदी में हों। प्रत्येक प्रश्न में चार स्पष्ट और अर्थपूर्ण उत्तर विकल्प हों और सही उत्तर भी दिया जाए। — Worksheet",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "lesson_id": "lesson-parts-of-a-plant",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "prompt": "पानी के उपयोग में सबसे अच्छा है:",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "A",
+        "concept": "अवधारणा",
+        "difficulty": "easy"
+      },
+      {
+        "id": "q2",
+        "type": "mcq",
+        "prompt": "लगभग जल को पीने के लिए सबसे अच्छा है:",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "B",
+        "concept": "अवधारणा",
+        "difficulty": "medium"
+      },
+      {
+        "id": "q3",
+        "type": "mcq",
+        "prompt": "पानी को बचाने में सबसे अच्छा है:",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "C",
+        "concept": "अवधारणा",
+        "difficulty": "medium"
+      },
+      {
+        "id": "q4",
+        "type": "mcq",
+        "prompt": "पानी के उपयोग में सबसे अच्छा है:",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correct_option": "D",
+        "concept": "अवधारणा",
+        "difficulty": "hard"
+      },
+      {
+        "id": "q5",
+        "type": "short-answer",
+        "prompt": "पानी के महत्व को लिखें:",
+        "options": [],
+        "correct_option": "",
+        "concept": "अवधारणा",
+        "difficulty": "medium"
+      }
+    ],
+    "generated": true
+  }
+]

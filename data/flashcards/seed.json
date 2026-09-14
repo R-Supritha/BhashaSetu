@@ -1,0 +1,83 @@
+[
+  {
+    "concept": "plant",
+    "title": "Plant",
+    "short_explanation": "A plant is a living thing that grows in soil and needs sunlight, water, and air.",
+    "image": "/static/flashcards/plant.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "root",
+    "title": "Root",
+    "short_explanation": "Roots hold the plant in the soil and take in water.",
+    "image": "/static/flashcards/root.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "stem",
+    "title": "Stem",
+    "short_explanation": "The stem carries water from the roots to the rest of the plant.",
+    "image": "/static/flashcards/stem.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "leaf",
+    "title": "Leaf",
+    "short_explanation": "Leaves help the plant make food using sunlight.",
+    "image": "/static/flashcards/leaf.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "flower",
+    "title": "Flower",
+    "short_explanation": "Flowers help the plant make seeds and new plants.",
+    "image": "/static/flashcards/flower.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "fruit",
+    "title": "Fruit",
+    "short_explanation": "Fruit protects the seeds inside it.",
+    "image": "/static/flashcards/fruit.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "seed",
+    "title": "Seed",
+    "short_explanation": "A seed can grow into a new plant.",
+    "image": "/static/flashcards/seed.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "water",
+    "title": "Water",
+    "short_explanation": "Plants need water to grow and stay healthy.",
+    "image": "/static/flashcards/water.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  },
+  {
+    "concept": "sunlight",
+    "title": "Sunlight",
+    "short_explanation": "Plants use sunlight to make their own food.",
+    "image": "/static/flashcards/sunlight.png",
+    "audio": null,
+    "lesson": "lesson-parts-of-a-plant",
+    "language": "sat"
+  }
+]

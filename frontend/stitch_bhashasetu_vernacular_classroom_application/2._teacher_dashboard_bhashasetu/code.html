@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script src="/assets/js/api.js"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container-high":"#efe8d6","secondary-container":"#bbeed4","tertiary-fixed-dim":"#9bcbff","surface-bright":"#fff9ee","on-tertiary-fixed":"#001d34","on-primary-fixed-variant":"#763300","on-error":"#ffffff","on-tertiary-container":"#fdfcff","secondary":"#396753","on-primary":"#ffffff","inverse-primary":"#ffb68d","tertiary":"#2c5f8d","tertiary-fixed":"#d0e4ff","surface-variant":"#e9e2d0","on-surface":"#1e1b11","primary-fixed":"#ffdbc9","error":"#ba1a1a","background":"#fff9ee","on-secondary-fixed":"#002115","outline":"#8a7265","surface-dim":"#e1d9c8","on-secondary-container":"#3f6d59","on-primary-container":"#fffbff","on-background":"#1e1b11","surface-container-lowest":"#ffffff","surface-container":"#f5eddb","on-tertiary":"#ffffff","on-surface-variant":"#574237","on-tertiary-fixed-variant":"#0e4976","inverse-surface":"#343024","primary-container":"#be5600","surface":"#fff9ee","primary":"#974300","tertiary-container":"#4878a7","surface-container-low":"#fbf3e1","on-secondary":"#ffffff","outline-variant":"#dec1b2","surface-tint":"#9b4500","secondary-fixed":"#bbeed4","on-secondary-fixed-variant":"#204f3c","error-container":"#ffdad6","on-primary-fixed":"#331200","inverse-on-surface":"#f8f0de","primary-fixed-dim":"#ffb68d","surface-container-highest":"#e9e2d0","secondary-fixed-dim":"#a0d1b8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","grid-margin-mobile":"1rem","space-2xs":"0.25rem","touch-target-min":"3rem","grid-gutter-tablet":"1.25rem","space-md":"1rem","space-sm":"0.75rem","grid-margin-desktop":"2.5rem","grid-margin-tablet":"1.5rem","space-lg":"1.5rem","grid-gutter-mobile":"0.75rem","space-xl":"2rem","space-3xl":"4rem","grid-gutter-desktop":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"body-md":["Noto Sans"],"display-hero":["Noto Serif"],"body-lg":["Noto Sans"],"headline-sm":["Noto Sans"],"label-md":["Noto Sans"],"label-sm":["Noto Sans"],"headline-lg-mobile":["Noto Serif"],"label-lg":["Noto Sans"],"headline-md":["Noto Serif"],"display-hero-mobile":["Noto Serif"],"vernacular-glyph-lg":["Noto Serif"],"body-sm":["Noto Sans"],"vernacular-glyph-sm":["Noto Sans"],"headline-lg":["Noto Serif"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"60px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-hero-mobile":["34px",{"lineHeight":"44px","fontWeight":"700"}],"vernacular-glyph-lg":["56px",{"lineHeight":"68px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"vernacular-glyph-sm":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"42px","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-grid-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><svg class="h-8 w-auto" viewBox="10 10 46 40" xmlns="http://www.w3.org/2000/svg" aria-label="BhashaSetu Logo">
+<rect x="10" y="14" width="44" height="36" rx="8" fill="#fff3e0" stroke="#d96814" stroke-width="2"/>
+<path d="M16 42 C 26 26, 38 26, 48 42" fill="none" stroke="#d96814" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M32 28 L32 44" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+<circle cx="32" cy="22" r="3.5" fill="#d96814"/>
+<circle cx="20" cy="32" r="2" fill="#059669"/>
+<circle cx="44" cy="32" r="2" fill="#d96814"/>
+</svg><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BhashaSetu</span><span class="font-label-sm text-label-sm text-on-surface-variant">भाषासेतु • Primary Vernacular Pedagogy</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high"><span class="font-label-sm text-label-sm text-on-surface">शिक्षक: हिंदी (Hindi)</span><span class="material-symbols-outlined text-secondary text-[16px]">sync_alt</span><span class="font-label-sm text-label-sm text-secondary font-bold">छात्र: संथाली (Santhali / ᱥᱟᱱᱛᱟᱲᱤ)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]"><a aria-current="page" class="px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lessons" href="#">Lessons</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="worksheets" href="#">Worksheets</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dictionary" href="#">Dictionary</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end"><span class="font-label-md text-label-md text-on-surface font-bold">सुनीता शर्मा (Sunita Sharma)</span><span class="font-label-sm text-label-sm text-on-surface-variant">Primary Class 3</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Classroom Slate & Teacher Command Header -->
+<section class="w-full px-grid-margin-desktop py-space-xl bg-gradient-to-b from-surface to-surface-container-low relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-24 w-80 h-80 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg relative z-10">
+<!-- Welcome Bar & Dual-Language Context -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span>कक्षा ३ • सत्रारंभ | Morning Session</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight" id="greeting-h1">
+            नमस्ते, सुनीता जी <span class="font-body-lg text-body-lg text-on-surface-variant font-normal block sm:inline">(Namaste, Sunita Sharma)</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+            Current Class: <strong class="text-on-surface font-semibold" id="current-class-label">Class 3 • Environmental Studies (पर्यावरण अध्ययन)</strong>
+</p>
+</div>
+<!-- System & Hardware Telemetry Badge -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs px-space-xs py-1 rounded-lg bg-secondary-container text-on-secondary-fixed-variant font-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Projector Connected</span>
+</div>
+<div class="h-4 w-px bg-surface-container-high hidden sm:block"></div>
+<div class="flex items-center gap-space-xs text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">tablet_mac</span>
+<span><strong>28/30</strong> Student Tablets Ready</span>
+</div>
+<div class="h-4 w-px bg-surface-container-high hidden sm:block"></div>
+<button class="flex items-center gap-1 text-tertiary font-label-sm hover:underline cursor-pointer" id="sync-telemetry-btn">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Refresh</span>
+</button>
+</div>
+</div>
+<!-- Vernacular Pedagogical Bridge Banner -->
+<div class="w-full bg-secondary text-on-secondary rounded-xl p-space-md shadow-md flex flex-col md:flex-row md:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-space-md z-10">
+<div class="w-12 h-12 rounded-xl bg-on-secondary/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px] text-secondary-fixed">translate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-wider">Active Vernacular Bridge (सक्रिय बहुभाषी सेतु)</span>
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-secondary">शिक्षक: हिंदी (Hindi)</span>
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">trending_flat</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed">छात्र: संथाली (Santhali / ᱥᱟᱱᱛᱟᱲᱤ)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-black/20 backdrop-blur-sm rounded-lg px-space-md py-space-xs self-start md:self-auto z-10">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">record_voice_over</span>
+<span class="font-label-sm text-secondary-fixed font-semibold">Dual Script Phonetic Assist: ACTIVE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Pedagogical Action Grid -->
+<section class="w-full px-grid-margin-desktop py-space-2xl bg-background">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Classroom Actions</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">प्रमुख शिक्षण कार्य (Teaching Controls)</h2>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Tap any card to deploy to projector &amp; student tablets</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg">
+<!-- CARD 1: Start New Lesson (Hero Priority Card - 7 Columns on Large Screens) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                Ready For Live Class
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lesson #04 • EVS</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start">
+<div class="w-20 h-20 rounded-xl bg-surface-container-high shrink-0 overflow-hidden flex items-center justify-center relative">
+<img class="w-full h-full object-cover" data-alt="A warm, tactile watercolor botanical illustration of a young mustard plant with roots, green stem, yellow flowers, and leaves clearly labeled for primary school classroom education, soft parchment paper background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMvxMgvNeI0_m7-ZwYgW_w9ggQTf4S0fdNqRu4bZkz8ymwqyAhRpoTsEhNAqFagUZKG_fC95c_bdr0TDoZ4Na2ZbedQ9tTeOr0Uknk4yRr_g_8zF7X-P3r3CBvpind6aH40kpdybA1ueDeYcFiIrl8v2Ku-g-kMm0gjcjStumBykuhXspEjxWK1VftFX8kZHxznxgfZGNct02ebihe6mFC-Ap6RPjotKXLsc0kjdT9_17XxZtEAzht"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold">नया पाठ शुरू करें • ᱱᱟᱣᱟ ᱯᱟᱴᱷ</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 leading-tight">
+                  Parts of a Plant (पौधों के भाग)
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+                  Santali vernacular bridge: <span class="font-semibold text-on-surface">ᱫᱟᱨᱮ ᱨᱮᱭᱟᱜ ᱦᱟᱹᱴᱤᱧ (Dare Reag Hatin)</span>. Root, Stem, Leaf, Flower interactive tactile discovery.
+                </p>
+</div>
+</div>
+<!-- Phonetic Bridge Micro-Badge Deck -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-on-surface-variant">Key Glyphs:</span>
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded font-label-md font-bold shadow-xs">जड़ ➔ ᱨᱮᱦᱮᱫ (Rehed)</span>
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded font-label-md font-bold shadow-xs">तना ➔ ᱰᱟᱹᱨ (Dar)</span>
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface rounded font-label-md font-bold shadow-xs">पत्ती ➔ ᱥᱟᱠᱟᱢ (Sakam)</span>
+</div>
+</div>
+<!-- Bottom Action Area with Tactile Button -->
+<div class="pt-space-lg mt-space-sm flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:w-auto flex-1 min-h-[52px] bg-primary text-on-primary px-space-xl py-space-sm rounded-lg font-label-lg font-bold shadow-[0_4px_0_0_#763300] active:translate-y-0.5 active:shadow-[0_2px_0_0_#763300] transition-all flex items-center justify-center gap-space-xs cursor-pointer" id="start-live-btn">
+<span class="material-symbols-outlined text-[24px]">cast_connected</span>
+<span>Start Classroom (कक्षा शुरू करें)</span>
+</button>
+<button class="w-full sm:w-auto px-space-md py-space-sm min-h-[52px] rounded-lg bg-surface-container-high text-on-surface font-label-md hover:bg-surface-variant transition-colors flex items-center justify-center gap-1" title="Quick preview lesson materials" id="preview-lesson-btn">
+<span class="material-symbols-outlined text-[20px]">preview</span>
+<span>पूर्वावलोकन</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Continue Lesson (5 Columns) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm font-bold">
+                In Progress • 65% Done
+              </span>
+<span class="font-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+<div class="flex items-center gap-space-md mt-1">
+<div class="w-16 h-16 rounded-xl bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[36px]">pets</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold">पाठ जारी रखें</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">
+                  Animals Around Us
+                </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">हमारे आस-पास के जानवर (Section 2)</span>
+</div>
+</div>
+<!-- Progress Meter -->
+<div class="mt-2 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-on-surface-variant">
+<span>Completed: Domestic &amp; Farm Animals</span>
+<span class="font-bold text-secondary">Step 3 of 5</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm">
+<button class="w-full min-h-[52px] bg-secondary text-on-secondary px-space-lg py-space-sm rounded-lg font-label-lg font-bold shadow-[0_4px_0_0_#204f3c] active:translate-y-0.5 active:shadow-[0_2px_0_0_#204f3c] transition-all flex items-center justify-center gap-space-xs cursor-pointer">
+<span class="material-symbols-outlined text-[22px]">play_arrow</span>
+<span>Resume (पुनः आरंभ करें)</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Worksheets (6 Columns) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">touch_app</span> 1-Click Push
+              </span>
+<span class="font-label-sm text-secondary font-bold" id="sheets-ready-count">3 Sheets Ready</span>
+</div>
+<div class="flex items-start gap-space-md mt-2">
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed-dim/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">assignment</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Worksheets (कार्यपत्रक)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Assign ready bilingual practice sheets directly to student tablets. Includes tracing, symbol matching, and voice verification tasks.
+                </p>
+</div>
+</div>
+<!-- Active Worksheet Pill List -->
+<div class="mt-2 flex flex-col gap-2 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-on-surface">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">draw</span>
+<span>WS-301: Leaf Shape &amp; Ol Chiki Match</span>
+</span>
+<span class="text-secondary font-bold">Ready</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-on-surface">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">record_voice_over</span>
+<span>WS-302: Pronouncing Flower / ᱵᱟᱦᱟ</span>
+</span>
+<span class="text-secondary font-bold">Ready</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex gap-space-sm">
+<button class="flex-1 min-h-[48px] bg-tertiary text-on-tertiary px-space-md py-space-xs rounded-lg font-label-md font-bold shadow-[0_3px_0_0_#0e4976] active:translate-y-0.5 active:shadow-[0_1px_0_0_#0e4976] transition-all flex items-center justify-center gap-1.5 cursor-pointer" id="push-worksheets-btn">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Push to All 28 Tablets</span>
+</button>
+<button class="px-space-md py-space-xs min-h-[48px] rounded-lg bg-surface-container-high text-on-surface font-label-md hover:bg-surface-variant transition-colors flex items-center justify-center" id="open-worksheets-btn">
+<span>Open Worksheets</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Assessment & Analytics (6 Columns) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Remediation Flagged
+              </span>
+<span class="font-label-sm text-on-surface-variant" id="class-avg-label">Class Avg: 78%</span>
+</div>
+<div class="flex items-start gap-space-md mt-2">
+<div class="w-14 h-14 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">insights</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Assessment &amp; Analytics (आकलन एवं विश्लेषण)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Continuous formative assessment tracking real-time student phoneme acquisition and cross-lingual concept clarity.
+                </p>
+</div>
+</div>
+<!-- Weak Concept Alert Box -->
+<div class="mt-2 bg-error-container/40 p-space-sm rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[24px]">flag</span>
+<div class="flex flex-col">
+<span class="font-label-sm font-bold text-on-surface" id="weak-concept-label">Weak Concept Detected: Flower (पुष्प / ᱵᱟᱦᱟ)</span>
+<span class="font-body-sm text-on-surface-variant text-[13px]" id="weak-concept-detail">12/28 students confused petiole with stem junction</span>
+</div>
+</div>
+<span class="px-2 py-1 bg-surface-container-lowest text-error font-label-sm font-bold rounded shrink-0">
+                Action Advised
+              </span>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex gap-space-sm">
+<button class="flex-1 min-h-[48px] bg-surface-container-high hover:bg-surface-variant text-on-surface px-space-md py-space-xs rounded-lg font-label-md font-bold shadow-[0_2px_0_0_#dec1b2] active:translate-y-0.5 active:shadow-none transition-all flex items-center justify-center gap-1.5 cursor-pointer" id="view-performance-btn">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+<span>View Class Performance (आकलन विवरण)</span>
+</button>
+<button class="px-space-md py-space-xs min-h-[48px] rounded-lg bg-secondary-container text-on-secondary-fixed-variant font-label-md font-bold hover:brightness-95 transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">healing</span>
+<span>Remedy Deck</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Live Teaching Classroom Bar (Collapsed quick-launcher) -->
+<section class="w-full px-grid-margin-desktop py-space-md bg-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface font-bold">Quick Vernacular Speech Drill</span>
+<span class="font-body-sm text-on-surface-variant">Play audio pronunciation anchor for the entire room</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="audio-pronounce-btn px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm flex items-center gap-1 cursor-pointer transition-colors" data-audio-phrase="Dar (Branch / ᱰᱟᱹᱨ)">
+<span class="material-symbols-outlined text-primary text-[16px]">volume_up</span>
+<span>ᱰᱟᱹᱨ (Branch)</span>
+</button>
+<button class="audio-pronounce-btn px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm flex items-center gap-1 cursor-pointer transition-colors" data-audio-phrase="Rehed (Root / ᱨᱮᱦᱮᱫ)">
+<span class="material-symbols-outlined text-primary text-[16px]">volume_up</span>
+<span>ᱨᱮᱦᱮᱫ (Root)</span>
+</button>
+<button class="audio-pronounce-btn px-space-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm flex items-center gap-1 cursor-pointer transition-colors" data-audio-phrase="Baha (Flower / ᱵᱟᱦᱟ)">
+<span class="material-symbols-outlined text-primary text-[16px]">volume_up</span>
+<span>ᱵᱟᱦᱟ (Flower)</span>
+</button>
+<span class="text-secondary font-label-sm font-bold pl-2 hidden" id="audio-feedback">🔊 Playing...</span>
+</div>
+</div>
+</section>
+<!-- Recent Lessons & Classroom Activity Log -->
+<section class="w-full px-grid-margin-desktop py-space-2xl bg-background">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">History &amp; Logs</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Recent Lessons (हाल ही में पढ़ाए गए पाठ)</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-on-surface-variant">Filter by:</span>
+<select class="px-space-sm py-1.5 bg-surface-container rounded-lg text-on-surface font-label-sm outline-none cursor-pointer">
+<option>Class 3-A (Environmental Studies)</option>
+<option>Class 3-B (Language Bridge)</option>
+<option>Class 2-A (Oral Santhali-Hindi)</option>
+</select>
+</div>
+</div>
+<!-- Tactile Card Table -->
+<div class="w-full flex flex-col gap-space-xs">
+<!-- Lesson 1 (Today) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">yard</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Parts of a Plant (पौधों के भाग)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm font-semibold">3-A</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Today, 10:30 AM
+                </span>
+<span>•</span>
+<span>Vernacular focus: Plant anatomy &amp; local flora names</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" id="lesson-status-dot"></span>
+<span class="font-label-sm font-bold text-primary" id="lesson-status-label">Ready for Live Session</span>
+</div>
+<button class="px-space-md py-2 bg-primary text-on-primary rounded-lg font-label-md font-bold shadow-[0_2px_0_0_#763300] hover:brightness-105 active:translate-y-0.5 transition-all" id="launch-lesson-btn">
+              Launch
+            </button>
+</div>
+</div>
+<!-- Lesson 2 (Yesterday) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">cruelty_free</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Animals Around Us (हमारे आस-पास के पशु)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm font-semibold">3-A</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_available</span> Yesterday
+                </span>
+<span>•</span>
+<span>Ol Chiki Animal phonetics &amp; habitations</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto">
+<div class="flex flex-col items-end">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-secondary font-label-sm font-bold">
+                Completed
+              </span>
+<span class="font-body-sm text-on-surface-variant mt-0.5">Class Mastery: <strong class="text-secondary font-bold">84%</strong></span>
+</div>
+<button class="px-space-md py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg font-label-md font-bold transition-all flex items-center gap-1 recent-report-btn">
+<span class="material-symbols-outlined text-[18px]">assessment</span>
+<span>Report</span>
+</button>
+</div>
+</div>
+<!-- Lesson 3 (Past Session) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[28px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Water and Its Uses (जल और इसके उपयोग)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm font-semibold">3-A</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-body-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span> 22 Oct 2024
+                </span>
+<span>•</span>
+<span>Conservation, rainfall cycle &amp; water bodies</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md w-full md:w-auto">
+<div class="flex flex-col items-end">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-secondary font-label-sm font-bold">
+                Completed
+              </span>
+<span class="font-body-sm text-on-surface-variant mt-0.5">Class Mastery: <strong class="text-secondary font-bold">79%</strong></span>
+</div>
+<button class="px-space-md py-2 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-lg font-label-md font-bold transition-all flex items-center gap-1 recent-report-btn">
+<span class="material-symbols-outlined text-[18px]">assessment</span>
+<span>Report</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Classroom Community & Cluster Resource Coordinator Support Notice -->
+<section class="w-full px-grid-margin-desktop pb-space-3xl pt-space-md bg-background">
+<div class="max-w-7xl mx-auto bg-surface-container-high rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs shrink-0">
+<span class="material-symbols-outlined text-[28px]">groups</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Need Pedagogical Assistance or Dialect Packs?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cluster Resource Centre (CRC) Godda has shared 4 verified Santhali phonetic rhymes for Class 3.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<button class="flex-1 md:flex-initial px-space-md py-2.5 bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-md font-bold rounded-lg shadow-xs transition-colors">
+          Browse CRC Resources
+        </button>
+<button class="flex-1 md:flex-initial px-space-md py-2.5 bg-secondary text-on-secondary font-label-md font-bold rounded-lg shadow-[0_2px_0_0_#204f3c] transition-all">
+          Request Co-Teacher Call
+        </button>
+</div>
+</div>
+</section>
+<!-- Notification Toast Simulation Container -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-lg py-space-md rounded-xl shadow-xl z-50 flex items-center gap-space-sm transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast-banner">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md font-bold" id="toast-title">Classroom Notice</span>
+<span class="font-body-sm text-xs" id="toast-msg">Action completed successfully.</span>
+</div>
+</div>
+</div>
+<script>
+  // Classroom teacher dashboard — wired to the BhashaSetu Flask backend.
+  const LESSON_ID = 'lesson-parts-of-a-plant';
+  const WORKSHEET_ID = 'worksheet-parts-of-a-plant';
+  const CLASS_SIZE = 30;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const toast = document.getElementById('toast-banner');
+    const toastTitle = document.getElementById('toast-title');
+    const toastMsg = document.getElementById('toast-msg');
+
+    function showToast(title, message) {
+      if (!toast) return;
+      toastTitle.textContent = title;
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    const API = window.BhashaSetuAPI;
+    if (!API) return;
+
+    function go(path) {
+      window.location.href = path;
+    }
+
+    // ---- Greeting + current class (from the stored teacher profile) --------
+    const teacher = API.getTeacher();
+    const greetingH1 = document.getElementById('greeting-h1');
+    if (teacher && greetingH1) {
+      const firstName = (teacher.name || 'सुनीता जी').split(' ')[0];
+      greetingH1.innerHTML =
+        'नमस्ते, ' + firstName + ' जी ' +
+        '<span class="font-body-lg text-body-lg text-on-surface-variant font-normal block sm:inline">(Namaste, ' +
+        (teacher.name || '') + ')</span>';
+    }
+    if (teacher && teacher.class_name && teacher.subject) {
+      const cls = document.getElementById('current-class-label');
+      if (cls) cls.textContent = 'Class ' + teacher.class_name + ' • ' + teacher.subject + ' (पर्यावरण अध्ययन)';
+    }
+
+    // ---- Live data: analytics + worksheets + classroom sessions -------------
+    Promise.all([
+      API.analytics(WORKSHEET_ID, CLASS_SIZE),
+      API.get('/api/worksheets'),
+      API.get('/api/classroom/sessions'),
+    ])
+      .then(([analytics, worksheets, sessions]) => {
+        const sheets = (worksheets.data || worksheets || []).length;
+        const ready = document.getElementById('sheets-ready-count');
+        if (ready && sheets) ready.textContent = sheets + ' Sheets Ready';
+
+        const summary = analytics.summary || {};
+        const avgEl = document.getElementById('class-avg-label');
+        if (avgEl && summary.average_score_percent != null) {
+          avgEl.textContent = 'Class Avg: ' + Math.round(summary.average_score_percent) + '%';
+        }
+
+        const completed = summary.completed || 0;
+        const pushBtn = document.getElementById('push-worksheets-btn');
+        if (pushBtn) {
+          const label = pushBtn.querySelector('span:last-child');
+          if (label) label.textContent = 'Push to All ' + (summary.students_total || CLASS_SIZE) + ' Tablets';
+        }
+
+        // Weak concept → remediation alert box
+        const weak = (analytics.weak_concepts || [])[0];
+        const weakLabel = document.getElementById('weak-concept-label');
+        const weakDetail = document.getElementById('weak-concept-detail');
+        if (weak && weakLabel && weakDetail) {
+          const pct = weak.mastery_percent != null ? Math.round(weak.mastery_percent) : 0;
+          weakLabel.textContent =
+            'Weak Concept Detected: ' + cap(weak.concept) + ' (पुष्प / ᱵᱟᱦਾ)';
+          weakDetail.textContent =
+            ((100 - pct) / 100) * completed + ' of ' + completed + ' students need remediation in ' + cap(weak.concept);
+        }
+
+        // First recent-lesson row becomes the real live session (if any started)
+        const latest = (sessions || [])[0];
+        const statusDot = document.getElementById('lesson-status-dot');
+        const statusLabel = document.getElementById('lesson-status-label');
+        if (latest && statusLabel) {
+          statusLabel.textContent = latest.status === 'live' ? 'Live Now' : 'Today, 10:30 AM';
+          statusDot.classList.remove('animate-pulse');
+          if (latest.status === 'live') statusDot.classList.add('animate-pulse');
+        }
+      })
+      .catch((err) => showToast('Dashboard Error', err.message));
+
+    function cap(s) {
+      return s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+    }
+
+    // ---- Navigation ----------------------------------------------------------
+    // "Start Classroom" is the primary post-login action: it should go
+    // straight to Live Classroom (mirrors launchClassroomSession() on the
+    // Lesson Setup page), not require a stop at Lesson Setup first. Lesson
+    // Setup itself stays reachable via previewBtn/launchBtn below.
+    const startLiveBtn = document.getElementById('start-live-btn');
+    if (startLiveBtn) {
+      startLiveBtn.addEventListener('click', () => {
+        showToast('Launching Live Classroom...', 'Connecting projector stream and broadcasting lesson...');
+        Promise.resolve()
+          .then(() => {
+            if (!API.getToken()) return null;
+            return API.post('/api/classroom/start', {
+              lesson_id: LESSON_ID,
+              worksheet_id: WORKSHEET_ID,
+            }, { raw: true }).then((r) => r.json()).catch(() => null);
+          })
+          .then(() => go('/live-classroom?lesson_id=' + LESSON_ID));
+      });
+    }
+
+    const previewBtn = document.getElementById('preview-lesson-btn');
+    if (previewBtn) {
+      previewBtn.addEventListener('click', () => {
+        go('/lesson-setup?lesson_id=' + LESSON_ID);
+      });
+    }
+
+    const launchBtn = document.getElementById('launch-lesson-btn');
+    if (launchBtn) {
+      launchBtn.addEventListener('click', () => {
+        go('/lesson-setup?lesson_id=' + LESSON_ID);
+      });
+    }
+
+    const pushWsBtn = document.getElementById('push-worksheets-btn');
+    if (pushWsBtn) {
+      pushWsBtn.addEventListener('click', () => {
+        go('/worksheet?worksheet_id=' + WORKSHEET_ID + '&student_id=S-1002&mode=demo-student');
+      });
+    }
+
+    const openWsBtn = document.getElementById('open-worksheets-btn');
+    if (openWsBtn) {
+      openWsBtn.addEventListener('click', () => {
+        go('/worksheet?worksheet_id=' + WORKSHEET_ID + '&student_id=S-1002&mode=demo-student');
+      });
+    }
+
+    const perfBtn = document.getElementById('view-performance-btn');
+    if (perfBtn) {
+      perfBtn.addEventListener('click', () => {
+        go('/analytics?worksheet_id=' + WORKSHEET_ID + '&class_size=' + CLASS_SIZE);
+      });
+    }
+
+    document.querySelectorAll('.recent-report-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        go('/analytics?worksheet_id=' + WORKSHEET_ID + '&class_size=' + CLASS_SIZE);
+      });
+    });
+
+    // Refresh Telemetry
+    const syncTelemetryBtn = document.getElementById('sync-telemetry-btn');
+    if (syncTelemetryBtn) {
+      syncTelemetryBtn.addEventListener('click', () => {
+        showToast('System Check Clean', 'Projector latency 12ms. All 28 local tablet batteries above 70%.');
+        location.reload();
+      });
+    }
+
+    // Speech drill quick buttons
+    const audioButtons = document.querySelectorAll('.audio-pronounce-btn');
+    const audioFeedback = document.getElementById('audio-feedback');
+    audioButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const phrase = btn.getAttribute('data-audio-phrase');
+        if (audioFeedback) {
+          audioFeedback.classList.remove('hidden');
+          audioFeedback.textContent = '🔊 Playing "' + phrase + '"';
+          setTimeout(() => {
+            audioFeedback.classList.add('hidden');
+          }, 2000);
+        }
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-grid-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">BhashaSetu</span><span class="font-body-sm text-body-sm">• Regional Vernacular Bridges for Primary Classrooms</span></div><div class="font-label-sm text-label-sm">© 2024 BhashaSetu Primary Education Platform. All rights reserved.</div></div></footer><script id="nav-router">
+(function () {
+  var ROUTES = { dashboard: '/dashboard', lessons: '/lesson-setup', worksheets: '/worksheet', analytics: '/analytics', dictionary: '/dictionary' };
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('a[data-path]') : null;
+    if (!el) return;
+    var to = ROUTES[el.getAttribute('data-path')];
+    if (!to) return;
+    e.preventDefault();
+    window.location.assign(to);
+  });
+})();
+</script>
+<script id="logout">
+(function () {
+  var avatar = document.querySelector('header .w-8.h-8.rounded-full');
+  if (!avatar) return;
+  avatar.title = 'Logout (बाहर निकलें)';
+  avatar.style.cursor = 'pointer';
+  avatar.addEventListener('click', function () {
+    if (!window.confirm('Log out of BhashaSetu?')) return;
+    try {
+      if (window.BhashaSetuAPI && BhashaSetuAPI.getToken()) {
+        fetch('/api/auth/logout', { method: 'POST', headers: { 'Authorization': 'Bearer ' + BhashaSetuAPI.getToken() }, body: '{}' }).catch(function () {});
+      }
+    } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_token'); } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_teacher'); } catch (e) {}
+    window.location.href = '/';
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "lesson-parts-of-a-plant",
+    "title": "Parts of a Plant",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "teacher_language": "hi",
+    "student_language": "sat",
+    "worksheet_id": "worksheet-parts-of-a-plant",
+    "concepts": [
+      "plant",
+      "root",
+      "stem",
+      "leaf",
+      "flower",
+      "fruit",
+      "seed",
+      "water",
+      "sunlight"
+    ]
+  }
+]

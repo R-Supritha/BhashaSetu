@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container-high":"#efe8d6","secondary-container":"#bbeed4","tertiary-fixed-dim":"#9bcbff","surface-bright":"#fff9ee","on-tertiary-fixed":"#001d34","on-primary-fixed-variant":"#763300","on-error":"#ffffff","on-tertiary-container":"#fdfcff","secondary":"#396753","on-primary":"#ffffff","inverse-primary":"#ffb68d","tertiary":"#2c5f8d","tertiary-fixed":"#d0e4ff","surface-variant":"#e9e2d0","on-surface":"#1e1b11","primary-fixed":"#ffdbc9","error":"#ba1a1a","background":"#fff9ee","on-secondary-fixed":"#002115","outline":"#8a7265","surface-dim":"#e1d9c8","on-secondary-container":"#3f6d59","on-primary-container":"#fffbff","on-background":"#1e1b11","surface-container-lowest":"#ffffff","surface-container":"#f5eddb","on-tertiary":"#ffffff","on-surface-variant":"#574237","on-tertiary-fixed-variant":"#0e4976","inverse-surface":"#343024","primary-container":"#be5600","surface":"#fff9ee","primary":"#974300","tertiary-container":"#4878a7","surface-container-low":"#fbf3e1","on-secondary":"#ffffff","outline-variant":"#dec1b2","surface-tint":"#9b4500","secondary-fixed":"#bbeed4","on-secondary-fixed-variant":"#204f3c","error-container":"#ffdad6","on-primary-fixed":"#331200","inverse-on-surface":"#f8f0de","primary-fixed-dim":"#ffb68d","surface-container-highest":"#e9e2d0","secondary-fixed-dim":"#a0d1b8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","grid-margin-mobile":"1rem","space-2xs":"0.25rem","touch-target-min":"3rem","grid-gutter-tablet":"1.25rem","space-md":"1rem","space-sm":"0.75rem","grid-margin-desktop":"2.5rem","grid-margin-tablet":"1.5rem","space-lg":"1.5rem","grid-gutter-mobile":"0.75rem","space-xl":"2rem","space-3xl":"4rem","grid-gutter-desktop":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"body-md":["Noto Sans"],"display-hero":["Noto Serif"],"body-lg":["Noto Sans"],"headline-sm":["Noto Sans"],"label-md":["Noto Sans"],"label-sm":["Noto Sans"],"headline-lg-mobile":["Noto Serif"],"label-lg":["Noto Sans"],"headline-md":["Noto Serif"],"display-hero-mobile":["Noto Serif"],"vernacular-glyph-lg":["Noto Serif"],"body-sm":["Noto Sans"],"vernacular-glyph-sm":["Noto Sans"],"headline-lg":["Noto Serif"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"60px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-hero-mobile":["34px",{"lineHeight":"44px","fontWeight":"700"}],"vernacular-glyph-lg":["56px",{"lineHeight":"68px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"vernacular-glyph-sm":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"42px","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-grid-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><svg class="h-8 w-auto" viewBox="10 10 46 40" xmlns="http://www.w3.org/2000/svg" aria-label="BhashaSetu Logo">
+<rect x="10" y="14" width="44" height="36" rx="8" fill="#fff3e0" stroke="#d96814" stroke-width="2"/>
+<path d="M16 42 C 26 26, 38 26, 48 42" fill="none" stroke="#d96814" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M32 28 L32 44" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+<circle cx="32" cy="22" r="3.5" fill="#d96814"/>
+<circle cx="20" cy="32" r="2" fill="#059669"/>
+<circle cx="44" cy="32" r="2" fill="#d96814"/>
+</svg><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BhashaSetu</span><span class="font-label-sm text-label-sm text-on-surface-variant">भाषासेतु • Primary Vernacular Pedagogy</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high"><span class="font-label-sm text-label-sm text-on-surface">शिक्षक: हिंदी (Hindi)</span><span class="material-symbols-outlined text-secondary text-[16px]">sync_alt</span><span class="font-label-sm text-label-sm text-secondary font-bold">छात्र: संथाली (Santhali / ᱥᱟᱱᱛᱟᱲᱤ)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]"><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lessons" href="#">Lessons</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="worksheets" href="#">Worksheets</a><a aria-current="page" class="px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dictionary" href="#">Dictionary</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end"><span class="font-label-md text-label-md text-on-surface font-bold">सुनीता शर्मा (Sunita Sharma)</span><span class="font-label-sm text-label-sm text-on-surface-variant">Primary Class 3</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<script src="/assets/js/api.js"></script>
+<!-- Top Utility Context Bar -->
+<section class="w-full bg-surface-container-low px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop py-space-md shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="hover:text-primary transition-colors cursor-pointer">Dashboard</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-bold text-on-surface">Assessment &amp; Analytics (आकलन एवं विश्लेषण)</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-bold">Class 3-A</span>
+</nav>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-md text-headline-md text-on-surface">Parts of a Plant (पौधों के भाग • ᱫᱟᱨᱮ ᱨᱮᱱᱟᱜ ᱦᱟᱹᱴᱤᱧ)</span>
+</div>
+<span class="px-space-sm py-1 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            <span id="completion-badge">Completed Today • 18 Oct 2024</span>
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md transition-all active:translate-y-0.5 hover:bg-surface-container-high" id="exportReportBtn">
+<span class="material-symbols-outlined text-primary text-[20px]">download</span>
+<span>Export Summary (साझा करें)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-md transition-all active:translate-y-0.5 hover:bg-primary-container" onclick="window.print()">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Print Register (प्रिंट)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metric Overview Cards -->
+<section class="w-full px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Total Students (कुल छात्र)</span>
+<span class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-on-surface" id="metric-total">--</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="metric-total-sub">--</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>All registered in Ol Chiki bridge</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Worksheets Completed</span>
+<span class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-on-surface"><span id="metric-completed">--</span> <span class="text-headline-sm font-headline-sm text-on-surface-variant" id="metric-completed-total"></span></div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mt-2">
+<div class="bg-secondary h-full rounded-full" style="width: 0%;" id="metric-completed-bar"></div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span id="metric-completed-rate">--</span>
+<span class="text-error font-bold" id="metric-completed-pending">--</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Class Average (कक्षा औसत)</span>
+<span class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">equalizer</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-primary" id="metric-avg">--</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="text-secondary font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> <span id="metric-avg-trend">--</span>
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs Lesson 5 (Roots)</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Pass benchmark: ≥60%</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">Vernacular Retention (संथाली)</span>
+<span class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg text-tertiary">86%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Mother-Tongue Phonetics</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span>
+<span>26 / 30 accurate pronunciation</span>
+</div>
+</div>
+</div>
+<!-- Main Analytical Sections: 2-Column Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Column 1: Concept Mastery Breakdown -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Concept Mastery Breakdown</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">अवधारणा प्रवीणता • Diagnostic checks across 5 core botanical topics</p>
+</div>
+<div class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-bold">
+              Class 3-A
+            </div>
+</div>
+<div class="flex flex-col gap-space-lg" id="concept-mastery-list">
+<!-- Root Item -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Root</span>
+<span class="font-body-md text-body-md text-on-surface-variant">(जड़ / ᱨᱮᱦᱮᱫ - Rehed)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">85%</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-fixed">High</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-3.5 rounded-full overflow-hidden p-0.5">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 85%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>25 / 28 students mastered water absorption</span>
+<span>0 errors on Ol Chiki term</span>
+</div>
+</div>
+<!-- Stem Item -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Stem</span>
+<span class="font-body-md text-body-md text-on-surface-variant">(तना / ᱰᱟᱹᱨ - Da'r)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary">72%</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed">Medium</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-3.5 rounded-full overflow-hidden p-0.5">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>20 / 28 students mastered support role</span>
+<span>5 need minor review</span>
+</div>
+</div>
+<!-- Leaf Item -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Leaf</span>
+<span class="font-body-md text-body-md text-on-surface-variant">(पत्ती / ᱥᱟᱠᱟᱢ - Sakam)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">90%</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-fixed">High</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-3.5 rounded-full overflow-hidden p-0.5">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 90%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>27 / 28 students identified food kitchen role</span>
+<span>Highest retention</span>
+</div>
+</div>
+<!-- Flower Item (FLAGGED) -->
+<div class="flex flex-col gap-space-xs p-space-sm rounded-lg bg-error-container/30">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Flower</span>
+<span class="font-body-md text-body-md text-on-surface-variant">(फूल / ᱵᱟᱦᱟ - Baha)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-error">61%</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-error text-on-error">Weak • Flagged</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-3.5 rounded-full overflow-hidden p-0.5">
+<div class="bg-error h-full rounded-full transition-all duration-500" style="width: 61%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-error font-semibold">
+<span>12 students confused petiole vs petals</span>
+<span>Immediate review suggested</span>
+</div>
+</div>
+<!-- Sunlight & Water Item -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sunlight &amp; Water</span>
+<span class="font-body-md text-body-md text-on-surface-variant">(धूप और जल / ᱵᱮᱲᱟ ᱟᱨ ᱫᱟᱜ)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">81%</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-fixed">High</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-3.5 rounded-full overflow-hidden p-0.5">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 81%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>24 / 28 understood energy nourishment</span>
+<span>Stable understanding</span>
+</div>
+</div>
+</div>
+<!-- Quick insight summary badge -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">psychology</span>
+<p class="font-body-sm text-body-sm" id="insight-text">
+<span class="font-bold">Pedagogical Insight:</span> Loading…
+            </p>
+</div>
+</div>
+<!-- Column 2: Targeted Pedagogical Remediation Highlight Box -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<!-- Main AI Remediation Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Alert top bar -->
+<div class="flex items-center justify-between bg-error-container text-on-error-container p-space-md -mx-space-xl -mt-space-xl mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px]">error</span>
+<span class="font-headline-sm text-headline-sm leading-tight">कमजोर अवधारणा पहचानी गई (Weak Concept Detected)</span>
+</div>
+<span class="text-xs px-2 py-1 rounded bg-on-error-container text-on-error font-bold tracking-wider uppercase">Priority 1</span>
+</div>
+<div class="flex items-start gap-space-sm mt-space-xs">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[28px]" id="weak-icon">local_florist</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">FOCAL BOTANICAL TOPIC</span>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-snug">
+<span id="weak-title">--</span>
+</h3>
+<p class="font-body-sm text-body-sm text-error font-semibold mt-1" id="weak-detail">--</p>
+</div>
+</div>
+<!-- Vernacular Bridge & Visual Flashcard preview -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm p-space-md rounded-lg bg-surface-container-low">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended Ol Chiki Drill:</span>
+<span class="font-vernacular-glyph-sm text-vernacular-glyph-sm text-primary font-bold" id="drill-sat">--</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="drill-latin">--</span>
+</div>
+<div class="flex items-center justify-end">
+<img class="w-28 h-20 object-cover rounded-lg shadow-sm" data-alt="A warm, tactile watercolor botanical illustration showing a hibiscus flower with highlighted Hindi and Santhali Ol Chiki callouts for petals, sepals, and stem on hand-pressed paper background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhL6hhEJ-1xXvIE7lX8hpvRkzGuqxs81Ola40Aggxhw3XSGDAUfP2IrcgtzzeWWhZUzXJviVZDBkFqoDU8On4FiHV6OQMLAxRinw_u8az80gbgAzkfVh8UAgPUn5iZ_Wc7DtrMVy9eNvtE_QCF2wBSCwGXeucHftn06V9Cl9II8BdCgsUKAcuhuv3BZZFOsmnAAIV3eCGbgISY6LjaiTfndCHtM5Fi7uTLTmNDkeAyVZ-w9uXRvhk6"/>
+</div>
+</div>
+<!-- Curriculum RAG Recommendation Block -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-bold">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="font-label-md text-label-md">AI / Curriculum RAG Recommendation</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed"><span id="rag-recommendation">Loading…</span></p>
+</div>
+<!-- Pedagogical Action Triggers -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Primary Remediation CTA -->
+<button class="w-full flex items-center justify-center gap-space-sm px-space-lg py-3.5 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm shadow-md transition-all active:translate-y-0.5 hover:bg-primary-container" id="startRemediationBtn">
+<span class="material-symbols-outlined text-[24px]">play_circle</span>
+<span>Start Remediation (सुधारात्मक कक्षा शुरू करें)</span>
+</button>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Secondary Flashcard Projector -->
+<button class="flex items-center justify-center gap-space-xs px-space-md py-3 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg shadow-sm transition-all active:translate-y-0.5 hover:opacity-90" id="projectFlashcardBtn">
+<span class="material-symbols-outlined text-[20px]">co_present</span>
+<span>Project Flower Flashcard</span>
+</button>
+<!-- Mini Practice Worksheet -->
+<button class="flex items-center justify-center gap-space-xs px-space-md py-3 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg shadow-sm transition-all active:translate-y-0.5 hover:bg-surface-variant" id="reassignWorksheetBtn">
+<span class="material-symbols-outlined text-[20px]">content_paste_go</span>
+<span>Re-assign Mini-Practice</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Audio Cue Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<button class="w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-md active:scale-95 transition-all" id="playBahaAudioBtn">
+<span class="material-symbols-outlined text-[24px]">volume_up</span>
+</button>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Flower Audio Drill (ᱵᱟᱦᱟ)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Phonetic sound &amp; parts breakdown • 45s</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              Ready to Play
+            </span>
+</div>
+</div>
+</div>
+<!-- Student Completion & Question Breakdown List -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-low">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Student Completion &amp; Diagnostic List</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">विद्यार्थी कार्य निष्पादन • Individual student breakdown &amp; bilingual competence</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Filtered by:</span>
+<span class="px-space-sm py-1 rounded-lg bg-surface-container font-label-sm text-label-sm font-bold text-on-surface" id="table-filter">All 30 Students</span>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead class="bg-surface-container font-label-md text-label-md text-on-surface-variant">
+<tr>
+<th class="px-space-lg py-space-sm">Roll / Student Name</th>
+<th class="px-space-lg py-space-sm">Status</th>
+<th class="px-space-lg py-space-sm">Overall Score</th>
+<th class="px-space-lg py-space-sm">Question Breakdown (Q1–Q5)</th>
+<th class="px-space-lg py-space-sm">Vernacular / Teacher Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface font-body-sm text-body-sm" id="student-table"></tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="table-footer">Showing 0 of 0 registered students (Class 3-A)</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-variant">Previous</button>
+<span class="px-space-sm py-1 rounded-lg bg-primary text-on-primary font-bold text-xs">1</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container font-bold text-xs text-on-surface">2</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container font-bold text-xs text-on-surface">3</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface hover:bg-surface-variant">Next</button>
+</div>
+</div>
+</div>
+<!-- Quick Action Floating Notification Toast / Confirmation Modal placeholder -->
+<div class="hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-space-md" id="remediationModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-xl shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">school</span>
+<h3 class="font-headline-md text-headline-md" id="rem-title">Launch Remediation Session</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" id="closeModalBtn">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface" id="rem-desc">
+            Classroom screen will switch to the targeted <strong>Flower (ᱵᱟᱦᱟ) Remediation Mode</strong> with synchronized Santhali pronunciation audio drills.
+          </p>
+<div class="p-space-md rounded-lg bg-surface-container flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">devices</span>
+<span class="font-label-md text-label-md text-on-surface">Target device: Class 3-A Smart Board</span>
+</div>
+<div class="flex justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" id="cancelModalBtn">Cancel</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-md" id="confirmLaunchBtn">Confirm &amp; Project Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+(function () {
+  const API = window.BhashaSetuAPI;
+  const params = new URLSearchParams(location.search);
+  const worksheetId = params.get('worksheet_id') || 'worksheet-parts-of-a-plant';
+  const classSize = parseInt(params.get('class_size') || '30', 10) || 30;
+  const $ = (id) => document.getElementById(id);
+
+  const CONCEPT_META = {
+    root: { label: 'Root', bi: '(जड़ / ᱨᱮᱦᱮᱫ - Rehed)', icon: 'nature' },
+    stem: { label: 'Stem', bi: '(तना / ᱰᱟᱹᱨ - Da\'r)', icon: 'vertical_align_center' },
+    leaf: { label: 'Leaf', bi: '(पत्ती / ᱥᱟᱠᱟᱢ - Sakam)', icon: 'eco' },
+    flower: { label: 'Flower', bi: '(फूल / ᱵᱟᱦᱟ - Baha)', icon: 'local_florist' },
+    fruit: { label: 'Fruit', bi: '(फल)', icon: 'nutrition' },
+    seed: { label: 'Seed', bi: '(बीज)', icon: 'grain' },
+    'sunlight-water': { label: 'Sunlight & Water', bi: '(धूप और जल / ᱵᱮᱲᱟ ᱟᱨ ᱫᱟᱜ)', icon: 'wb_sunny' },
+    water: { label: 'Water', bi: '(पानी)', icon: 'water_drop' },
+    sunlight: { label: 'Sunlight', bi: '(धूप)', icon: 'wb_sunny' },
+  };
+
+  const WEAK_COLOR = 70;
+  const esc = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const level = (pct) => pct >= 80 ? 'high' : pct >= WEAK_COLOR ? 'medium' : 'weak';
+
+  function fmtDate(iso) {
+    if (!iso) return 'Completed Today';
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return 'Completed';
+    return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+  }
+
+  function renderMastery(mastery, completed, weakSet) {
+    const list = $('concept-mastery-list');
+    if (!list) return;
+    list.innerHTML = '';
+    const keys = Object.keys(mastery);
+    if (!keys.length) {
+      list.innerHTML = '<div class="font-body-sm text-body-sm text-on-surface-variant">No submissions yet for this worksheet.</div>';
+      return;
+    }
+    keys.forEach((concept) => {
+      const pct = mastery[concept];
+      const meta = CONCEPT_META[concept] || { label: concept, bi: '', icon: 'school' };
+      const lvl = level(pct);
+      const flagged = weakSet.has(concept);
+      const wrap = document.createElement('div');
+      wrap.className = 'flex flex-col gap-space-xs' + (flagged ? ' p-space-sm rounded-lg bg-error-container/30' : '');
+      const title = flagged
+        ? '<div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-error text-[20px]">warning</span><span class="font-headline-sm text-headline-sm text-on-surface font-bold">' + esc(meta.label) + '</span><span class="font-body-md text-body-md text-on-surface-variant">' + esc(meta.bi) + '</span></div>'
+        : '<div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface">' + esc(meta.label) + '</span><span class="font-body-md text-body-md text-on-surface-variant">' + esc(meta.bi) + '</span></div>';
+      const numCls = lvl === 'high' ? 'text-secondary' : lvl === 'medium' ? 'text-primary' : 'text-error';
+      const badgeCls = lvl === 'high' ? 'bg-secondary-container text-on-secondary-fixed' : lvl === 'medium' ? 'bg-primary-fixed text-on-primary-fixed' : 'bg-error text-on-error';
+      const badgeTxt = lvl === 'high' ? 'High' : lvl === 'medium' ? 'Medium' : 'Weak • Flagged';
+      const barCls = lvl === 'high' ? 'bg-secondary' : lvl === 'medium' ? 'bg-primary' : 'bg-error';
+      const sideNote = flagged ? 'Immediate review suggested' : (lvl === 'high' ? 'Highest retention' : 'Meets benchmark');
+      wrap.innerHTML =
+        '<div class="flex items-center justify-between">' +
+        '<div class="flex items-center gap-space-xs">' + title + '</div>' +
+        '<div class="flex items-center gap-space-xs">' +
+        '<span class="font-label-md text-label-md font-bold ' + numCls + '">' + pct + '%</span>' +
+        '<span class="px-2 py-0.5 rounded text-[11px] font-bold ' + badgeCls + '">' + badgeTxt + '</span></div></div>' +
+        '<div class="w-full bg-surface-container-high h-3.5 rounded-full overflow-hidden p-0.5">' +
+        '<div class="' + barCls + ' h-full rounded-full transition-all duration-500" style="width: ' + pct + '%;"></div></div>' +
+        '<div class="flex justify-between font-label-sm text-label-sm ' + (flagged ? 'text-error font-semibold' : 'text-on-surface-variant') + '">' +
+        '<span>' + Math.round((pct / 100) * completed) + ' / ' + completed + ' students correct on this concept</span>' +
+        '<span>' + sideNote + '</span></div>';
+      list.appendChild(wrap);
+    });
+  }
+
+  function renderWeak(weakList, mastery, structuredRecs) {
+    const weak = (weakList && weakList.length) ? weakList[0] : null;
+    const concept = weak ? weak.concept : (Object.keys(mastery).length ? Object.keys(mastery).reduce((a, c) => mastery[c] < mastery[a] ? c : a) : null);
+    const meta = CONCEPT_META[concept] || { label: concept || 'Concept', bi: '', icon: 'school' };
+    const pct = weak ? weak.mastery_percent : (concept != null ? mastery[concept] : null);
+
+    if (concept && $('weak-title')) {
+      $('weak-icon').textContent = meta.icon || 'school';
+      $('weak-title').textContent = String(meta.label).toUpperCase() + ' ' + (meta.bi || '');
+      $('weak-detail').textContent = pct != null
+        ? 'Only ' + pct + '% mastery across submissions — students struggled with the \'' + (meta.label || concept) + '\' concept.'
+        : 'No submissions yet for this worksheet.';
+      $('drill-sat').textContent = (meta.bi || '').replace(/^\(/, '').replace(/\)$/, '') || '—';
+      $('drill-latin').textContent = 'Word-bridge drill for ' + (meta.label || concept) + ' — visual flashcard + Santhali audio';
+    } else if ($('weak-title')) {
+      $('weak-title').textContent = 'NO WEAK CONCEPT';
+      $('weak-detail').textContent = 'All concepts are above the ' + WEAK_COLOR + '% benchmark. Great work!';
+      $('drill-latin').textContent = 'Optional reinforcement drill';
+    }
+
+    if ($('rag-recommendation')) {
+      const rec = (structuredRecs && structuredRecs.length) ? structuredRecs[0] : null;
+      let rtxt = (rec && rec.explanation)
+        ? rec.explanation
+        : 'Students need additional reinforcement on ';
+      if (!(rec && rec.explanation)) {
+        rtxt += (rec && rec.concept) ? '\'' + (CONCEPT_META[rec.concept] ? CONCEPT_META[rec.concept].label : rec.concept) + '\'' : 'the weakest flagged concept';
+        rtxt += '. Recommended action: re-teach it using the pre-stored visual flashcard and play the Santhali vernacular audio drill during morning circle time.';
+      } else if (rec.explanation_mode === 'real') {
+        rtxt += ' [AI Insight: ' + (API.getAIStatusLabel({ mode: rec.explanation_mode, engine: rec.explanation_engine }).text) + ']';
+      } else {
+        rtxt += ' [Fallback Insight: labelled template]';
+      }
+      if (pct != null) rtxt += ' Current weakest concept: ' + (meta.label || concept) + ' at ' + pct + '%, below the ' + WEAK_COLOR + '% benchmark.';
+      if (rec && rec.alternate_explanation) {
+        rtxt += ' Alternate teaching explanation: ' + rec.alternate_explanation;
+        if (rec.alternate_explanation_mode === 'real') {
+          rtxt += ' [AI Alternate: ' + (API.getAIStatusLabel({ mode: rec.alternate_explanation_mode, engine: rec.alternate_explanation_engine }).text) + ']';
+        } else {
+          rtxt += ' [Fallback Alternate: labelled template]';
+        }
+      }
+      $('rag-recommendation').textContent = rtxt;
+    }
+  }
+
+  function renderTable(rows) {
+    const tbody = $('student-table');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    if (!rows.length) {
+      tbody.innerHTML = '<tr><td class="px-space-lg py-space-md" colspan="5">No submissions yet for this worksheet.</td></tr>';
+      return;
+    }
+    const order = Object.keys(rows[0].concept_results || []);
+    rows.forEach((r) => {
+      const cr = r.concept_results || [];
+      const wrong = order.filter((c) => cr[c] !== 'correct');
+      const pctCls = r.score_percent >= 80 ? 'text-secondary' : r.score_percent >= 60 ? 'text-primary' : 'text-error';
+      const tr = document.createElement('tr');
+      tr.className = (wrong.length ? 'bg-error-container/10 hover:bg-error-container/20 ' : 'hover:bg-surface-container-low/50 ') + 'transition-colors';
+      const short = String(r.student_id || '?').replace(/[^0-9]/g, '').slice(-2) || '?';
+      const chips = order.map((c) => {
+        const ok = cr[c] === 'correct';
+        return '<span class="w-6 h-6 rounded ' + (ok ? 'bg-secondary text-on-secondary' : 'bg-error text-on-error') + ' flex items-center justify-center font-bold text-[11px]" title="' + esc(c) + ': ' + (ok ? 'Correct' : 'Incorrect') + '">' + (ok ? '✓' : '✕') + '</span>';
+      }).join('');
+      const action = wrong.length
+        ? '<div class="flex items-center gap-space-xs"><span class="px-space-xs py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-bold">' + esc((CONCEPT_META[wrong[0]] || { label: wrong[0] }).label) + ' Confused</span><span class="text-primary font-bold underline text-xs">Remediate</span></div>'
+        : '<span class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check</span>High Ol Chiki &amp; Hindi script fluency</span>';
+      tr.innerHTML =
+        '<td class="px-space-lg py-space-md font-label-lg text-label-lg">' +
+        '<div class="flex items-center gap-space-sm">' +
+        '<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary text-xs">' + esc(short) + '</span>' +
+        '<div><div class="font-bold text-on-surface">' + esc(r.student_id || 'Student') + '</div>' +
+        '<div class="font-body-sm text-body-sm text-on-surface-variant">Class 3-A • Santhali bridge</div></div></div></td>' +
+        '<td class="px-space-lg py-space-md"><span class="px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">Submitted</span></td>' +
+        '<td class="px-space-lg py-space-md font-bold text-headline-sm ' + pctCls + '">' + r.score_percent + '%</td>' +
+        '<td class="px-space-lg py-space-md"><div class="flex items-center gap-1.5">' + chips + '</div></td>' +
+        '<td class="px-space-lg py-space-md">' + action + '</td>';
+      tbody.appendChild(tr);
+    });
+  }
+
+  async function load() {
+    let summary = {}, mastery = {}, weakList = [], recStrings = [];
+    let rows = [];
+    let structuredRecs = [];
+    try {
+      const report = await API.analytics(worksheetId, classSize);
+      summary = report.summary || {};
+      mastery = report.concept_mastery || {};
+      weakList = report.weak_concepts || [];
+      recStrings = report.recommendations || [];
+    } catch (e) { /* some endpoints may 500 on missing data; remain defensive */ }
+    try {
+      rows = await API.get('/api/analytics/submissions', { worksheet_id: worksheetId });
+      exportRows = rows;
+    } catch (e) { rows = []; }
+    try {
+      const recs = await API.get('/api/analytics/recommendations', { worksheet_id: worksheetId });
+      structuredRecs = Array.isArray(recs) ? recs : [];
+    } catch (e) {
+      structuredRecs = recStrings.map((s) => ({ recommendation: s }));
+    }
+
+    // `rows` is the raw submission LOG (every attempt, including resubmissions),
+    // used for the activity table below. `summary.completed` is the backend's
+    // deduplicated unique-student count (see assessment_service._latest_per_student)
+    // and must be the source of truth for "how many students completed this" —
+    // otherwise resubmissions inflate the class size (e.g. 27 students with a
+    // handful of resubmits reading as 40+ "students").
+    const completed = summary.completed != null ? summary.completed : rows.length;
+    const total = summary.students_total || classSize;
+    const avg = summary.average_score_percent != null
+      ? summary.average_score_percent
+      : (completed ? Math.round(rows.reduce((a, r) => a + r.score_percent, 0) / completed) : 0);
+
+    if ($('metric-total')) $('metric-total').textContent = total;
+    if ($('metric-total-sub')) $('metric-total-sub').textContent = total + ' Enrolled • Class 3-A';
+    if ($('metric-completed')) $('metric-completed').textContent = completed;
+    if ($('metric-completed-total')) $('metric-completed-total').textContent = '/ ' + total;
+    if ($('metric-completed-bar')) $('metric-completed-bar').style.width = total ? Math.round((completed / total) * 100) + '%' : '0%';
+    if ($('metric-completed-rate')) $('metric-completed-rate').textContent = total ? Math.round((completed / total) * 100) + '% Submission Rate' : '—';
+    if ($('metric-completed-pending')) $('metric-completed-pending').textContent = (total - completed) + ' Pending';
+    if ($('metric-avg')) $('metric-avg').textContent = avg + '%';
+    if ($('metric-avg-trend')) $('metric-avg-trend').textContent = 'avg across ' + (rows.length || completed) + ' submitted sheet(s)';
+
+    const weakSet = new Set((weakList || []).map((w) => w.concept));
+    weakConcept = (weakList && weakList.length) ? weakList[0].concept : null;
+    renderMastery(mastery, completed, weakSet);
+    renderWeak(weakList, mastery, structuredRecs);
+
+    if ($('table-filter')) $('table-filter').textContent = completed + (completed === 1 ? ' Student' : ' Students');
+    if ($('table-footer')) $('table-footer').textContent = 'Showing ' + rows.length + ' submission(s) from ' + completed + ' of ' + total + ' registered students (Class 3-A)';
+    renderTable(rows);
+
+    const dates = rows.map((r2) => r2.submitted_at).filter(Boolean).sort();
+    if ($('completion-badge') && dates.length) {
+      $('completion-badge').textContent = 'Checkpoint • ' + fmtDate(dates[dates.length - 1]);
+    }
+
+    if ($('insight-text')) {
+      const weak = weakList && weakList.length ? weakList[0] : null;
+      $('insight-text').innerHTML = '<span class="font-bold">Pedagogical Insight:</span> ' + (weak
+        ? 'Focus remediation energy on \'' + ((CONCEPT_META[weak.concept] || {}).label || weak.concept) + '\' (' + weak.mastery_percent + '% mastery) below the ' + WEAK_COLOR + '% benchmark.'
+        : 'No concept currently below the ' + WEAK_COLOR + '% benchmark. Class shows strong bilingual transfer.');
+    }
+  }
+
+  // ---------- retained original interactions (now wired to the backend) ----------
+  let exportRows = [];
+  let weakConcept = null;
+  const startRemediationBtn = $('startRemediationBtn');
+  const projectFlashcardBtn = $('projectFlashcardBtn');
+  const reassignWorksheetBtn = $('reassignWorksheetBtn');
+  const playBahaAudioBtn = $('playBahaAudioBtn');
+  const remediationModal = $('remediationModal');
+  const closeModalBtn = $('closeModalBtn');
+  const cancelModalBtn = $('cancelModalBtn');
+  const confirmLaunchBtn = $('confirmLaunchBtn');
+  const exportReportBtn = $('exportReportBtn');
+
+  function speakHi(text) {
+    if (!text) return;
+    try {
+      if ('speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'hi-IN';
+        speechSynthesis.cancel();
+        speechSynthesis.speak(u);
+      }
+    } catch (e) { /* audio is best-effort */ }
+  }
+
+  function semaModalForCard(card) {
+    if ($('rem-title')) $('rem-title').textContent = 'Project Stored Flashcard';
+    if ($('rem-desc')) {
+      $('rem-desc').innerHTML = card && card.title
+        ? '<strong>' + esc(card.title) + '</strong><br><br>' + esc(card.short_explanation || '')
+          + '<br><br><span class="font-label-sm">Stored curriculum flashcard • ' + esc(card.concept || '') + ' • ' + (card.language || '').toUpperCase() + '</span>'
+        : 'No matching stored flashcard found.';
+    }
+  }
+
+  if (startRemediationBtn && remediationModal) {
+    startRemediationBtn.addEventListener('click', () => {
+      if ($('rem-title')) $('rem-title').textContent = 'Launch Remediation Session';
+      if ($('rem-desc')) $('rem-desc').textContent = 'Classroom screen will switch to the targeted remediation mode for the flagged concept with synchronized Santhali pronunciation audio drills.';
+      if (confirmLaunchBtn) confirmLaunchBtn.textContent = 'Confirm & Project Now';
+      remediationModal.classList.remove('hidden');
+    });
+  }
+  if (closeModalBtn && remediationModal) {
+    closeModalBtn.addEventListener('click', () => { remediationModal.classList.add('hidden'); });
+  }
+  if (cancelModalBtn && remediationModal) {
+    cancelModalBtn.addEventListener('click', () => { remediationModal.classList.add('hidden'); });
+  }
+  if (confirmLaunchBtn && remediationModal) {
+    confirmLaunchBtn.addEventListener('click', () => {
+      confirmLaunchBtn.disabled = true;
+      confirmLaunchBtn.textContent = 'Starting session...';
+      const payload = { lesson_id: 'lesson-parts-of-a-plant', worksheet_id: worksheetId, class_name: 'Class 3-A' };
+      if (weakConcept) payload.concepts = [weakConcept];
+      (API ? API.post('/api/classroom/start', payload) : Promise.resolve(null))
+        .then((session) => {
+          const id = session && session._id ? ' (session ' + session._id + ')' : '';
+          alert('Remediation session launched' + id + ' — projector is now broadcasting the stored remediation flashcard to Class 3-A.');
+        })
+        .catch(() => alert('Could not start the remediation session. Please try again.'))
+        .finally(() => {
+          remediationModal.classList.add('hidden');
+          confirmLaunchBtn.disabled = false;
+          confirmLaunchBtn.textContent = 'Confirm & Project Now';
+        });
+    });
+  }
+  if (playBahaAudioBtn) {
+    playBahaAudioBtn.addEventListener('click', () => {
+      playBahaAudioBtn.classList.toggle('animate-pulse');
+      setTimeout(() => playBahaAudioBtn.classList.remove('animate-pulse'), 2000);
+      const meta = weakConcept ? (CONCEPT_META[weakConcept] || null) : null;
+      const phrase = meta && meta.bi ? meta.bi.replace(/[()]/g, '') : 'फूल, पत्ती, तना, जड़, बीज';
+      speakHi(phrase);
+    });
+  }
+  if (projectFlashcardBtn) {
+    projectFlashcardBtn.addEventListener('click', () => {
+      API.get('/api/flashcards', { lesson: 'lesson-parts-of-a-plant' })
+        .then((cards) => {
+          const list = Array.isArray(cards) ? cards : (cards && cards.data) || [];
+          const target = weakConcept ? list.find((c) => c.concept === weakConcept) : list[0];
+          const card = target || list[0] || null;
+          semaModalForCard(card);
+          if (confirmLaunchBtn) confirmLaunchBtn.textContent = 'Project Flashcard Now';
+          remediationModal.classList.remove('hidden');
+        })
+        .catch(() => {
+          semaModalForCard(null);
+          remediationModal.classList.remove('hidden');
+        });
+    });
+  }
+  if (reassignWorksheetBtn) {
+    reassignWorksheetBtn.addEventListener('click', () => {
+      reassignWorksheetBtn.disabled = true;
+      reassignWorksheetBtn.textContent = 'Assigning…';
+      API.post('/api/worksheets/assign', { worksheet_id: worksheetId, class_name: 'Class 3-A' })
+        .then((assignment) => {
+          const when = assignment && assignment.assigned_at;
+          const whenText = when ? (' at ' + new Date(when).toLocaleTimeString()) : '';
+          alert('Remedial worksheet dispatched to the flagged students' + whenText + ' (assignment ' + (assignment && assignment._id) + ').');
+        })
+        .catch(() => alert('Could not assign the remedial worksheet. Please try again.'))
+        .finally(() => {
+          reassignWorksheetBtn.disabled = false;
+          reassignWorksheetBtn.textContent = 'Reassign Remedial Worksheet';
+        });
+    });
+  }
+  if (exportReportBtn) {
+    exportReportBtn.addEventListener('click', () => {
+      const header = ['student_id', 'score_percent', 'correct_count', 'total_count', 'submitted_at'];
+      const lines = [header.join(',')];
+      exportRows.forEach((r) => {
+        lines.push([r.student_id, r.score_percent, r.correct_count, r.total_count, r.submitted_at || '']
+          .map((v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"').join(','));
+      });
+      const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'bhashasetu_' + worksheetId + '_report.csv';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      const u = a.href;
+      setTimeout(function () { URL.revokeObjectURL(u); }, 1500);
+    });
+  }
+
+  load();
+})();
+</script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-grid-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">BhashaSetu</span><span class="font-body-sm text-body-sm">• Regional Vernacular Bridges for Primary Classrooms</span></div><div class="font-label-sm text-label-sm">© 2024 BhashaSetu Primary Education Platform. All rights reserved.</div></div></footer><script id="nav-router">
+(function () {
+  var ROUTES = { dashboard: '/dashboard', lessons: '/lesson-setup', worksheets: '/worksheet', analytics: '/analytics', dictionary: '/dictionary' };
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('a[data-path]') : null;
+    if (!el) return;
+    var to = ROUTES[el.getAttribute('data-path')];
+    if (!to) return;
+    e.preventDefault();
+    window.location.assign(to);
+  });
+})();
+</script>
+<script id="logout">
+(function () {
+  var avatar = document.querySelector('header .w-8.h-8.rounded-full');
+  if (!avatar) return;
+  avatar.title = 'Logout (बाहर निकलें)';
+  avatar.style.cursor = 'pointer';
+  avatar.addEventListener('click', function () {
+    if (!window.confirm('Log out of BhashaSetu?')) return;
+    try {
+      if (window.BhashaSetuAPI && BhashaSetuAPI.getToken()) {
+        fetch('/api/auth/logout', { method: 'POST', headers: { 'Authorization': 'Bearer ' + BhashaSetuAPI.getToken() }, body: '{}' }).catch(function () {});
+      }
+    } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_token'); } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_teacher'); } catch (e) {}
+    window.location.href = '/';
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "worksheet-parts-of-a-plant",
+    "title": "Parts of a Plant",
+    "lesson": "parts-of-a-plant",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies",
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which part holds the plant in the soil?",
+        "options": ["Leaf", "Root", "Flower", "Fruit"],
+        "correct_option": "Root",
+        "concept": "root"
+      },
+      {
+        "id": "q2",
+        "prompt": "Which part carries water from the roots to the rest of the plant?",
+        "options": ["Stem", "Seed", "Petal", "Flower"],
+        "correct_option": "Stem",
+        "concept": "stem"
+      },
+      {
+        "id": "q3",
+        "prompt": "Which part helps the plant make its own food?",
+        "options": ["Root", "Fruit", "Leaf", "Seed"],
+        "correct_option": "Leaf",
+        "concept": "leaf"
+      },
+      {
+        "id": "q4",
+        "prompt": "Which part of the plant makes seeds?",
+        "options": ["Flower", "Stem", "Root", "Water"],
+        "correct_option": "Flower",
+        "concept": "flower"
+      },
+      {
+        "id": "q5",
+        "prompt": "What protects the seeds inside a plant?",
+        "options": ["Leaf", "Root", "Fruit", "Sunlight"],
+        "correct_option": "Fruit",
+        "concept": "fruit"
+      }
+    ]
+  }
+]

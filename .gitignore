@@ -1,0 +1,65 @@
+# ── Environment & secrets ──────────────────────────────────────
+.env
+.env.local
+.env.production
+
+# ── Python ─────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ───────────────────────────────────────
+.venv/
+venv/
+.venv-indictrans2/
+.env-indictrans2/
+
+# ── AI model files (too large for Git) ─────────────────────────
+models/
+*.gguf
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.h5
+
+# ── IDE / OS ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ───────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Uploads & temp ─────────────────────────────────────────────
+uploads/
+tmp/
+temp/
+
+# ── Test cache ─────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Data runtime (ChromaDB, locks) ────────────────────────────
+data/chroma/
+data/*.lock
+
+# ── Node ───────────────────────────────────────────────────────
+node_modules/
+
+# ── Misc ───────────────────────────────────────────────────────
+_itk_src/

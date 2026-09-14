@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "T-1001",
+    "teacher_id": "T-1001",
+    "name": "Mrs. Hembrom",
+    "password_hash": "scrypt:32768:8:1$XcwbbLaHNANXikLO$c8cd50ceb4dcb85aca9e182e5ec48f74f590c6c31af48422eaa0d0711079c5c8c924b7b2ed69677eb8d60e2319945a810500642541149f2bfc5fb0a46a926248",
+    "class_name": "Class 3",
+    "subject": "Environmental Studies"
+  }
+]

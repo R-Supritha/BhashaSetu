@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script src="/assets/js/api.js"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container-high":"#efe8d6","secondary-container":"#bbeed4","tertiary-fixed-dim":"#9bcbff","surface-bright":"#fff9ee","on-tertiary-fixed":"#001d34","on-primary-fixed-variant":"#763300","on-error":"#ffffff","on-tertiary-container":"#fdfcff","secondary":"#396753","on-primary":"#ffffff","inverse-primary":"#ffb68d","tertiary":"#2c5f8d","tertiary-fixed":"#d0e4ff","surface-variant":"#e9e2d0","on-surface":"#1e1b11","primary-fixed":"#ffdbc9","error":"#ba1a1a","background":"#fff9ee","on-secondary-fixed":"#002115","outline":"#8a7265","surface-dim":"#e1d9c8","on-secondary-container":"#3f6d59","on-primary-container":"#fffbff","on-background":"#1e1b11","surface-container-lowest":"#ffffff","surface-container":"#f5eddb","on-tertiary":"#ffffff","on-surface-variant":"#574237","on-tertiary-fixed-variant":"#0e4976","inverse-surface":"#343024","primary-container":"#be5600","surface":"#fff9ee","primary":"#974300","tertiary-container":"#4878a7","surface-container-low":"#fbf3e1","on-secondary":"#ffffff","outline-variant":"#dec1b2","surface-tint":"#9b4500","secondary-fixed":"#bbeed4","on-secondary-fixed-variant":"#204f3c","error-container":"#ffdad6","on-primary-fixed":"#331200","inverse-on-surface":"#f8f0de","primary-fixed-dim":"#ffb68d","surface-container-highest":"#e9e2d0","secondary-fixed-dim":"#a0d1b8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","grid-margin-mobile":"1rem","space-2xs":"0.25rem","touch-target-min":"3rem","grid-gutter-tablet":"1.25rem","space-md":"1rem","space-sm":"0.75rem","grid-margin-desktop":"2.5rem","grid-margin-tablet":"1.5rem","space-lg":"1.5rem","grid-gutter-mobile":"0.75rem","space-xl":"2rem","space-3xl":"4rem","grid-gutter-desktop":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"body-md":["Noto Sans"],"display-hero":["Noto Serif"],"body-lg":["Noto Sans"],"headline-sm":["Noto Sans"],"label-md":["Noto Sans"],"label-sm":["Noto Sans"],"headline-lg-mobile":["Noto Serif"],"label-lg":["Noto Sans"],"headline-md":["Noto Serif"],"display-hero-mobile":["Noto Serif"],"vernacular-glyph-lg":["Noto Serif"],"body-sm":["Noto Sans"],"vernacular-glyph-sm":["Noto Sans"],"headline-lg":["Noto Serif"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"60px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-hero-mobile":["34px",{"lineHeight":"44px","fontWeight":"700"}],"vernacular-glyph-lg":["56px",{"lineHeight":"68px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"vernacular-glyph-sm":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"42px","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-grid-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><svg class="h-8 w-auto" viewBox="10 10 46 40" xmlns="http://www.w3.org/2000/svg" aria-label="BhashaSetu Logo">
+<rect x="10" y="14" width="44" height="36" rx="8" fill="#fff3e0" stroke="#d96814" stroke-width="2"/>
+<path d="M16 42 C 26 26, 38 26, 48 42" fill="none" stroke="#d96814" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M32 28 L32 44" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+<circle cx="32" cy="22" r="3.5" fill="#d96814"/>
+<circle cx="20" cy="32" r="2" fill="#059669"/>
+<circle cx="44" cy="32" r="2" fill="#d96814"/>
+</svg><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BhashaSetu</span><span class="font-label-sm text-label-sm text-on-surface-variant">भाषासेतु • Primary Vernacular Pedagogy</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high"><span class="font-label-sm text-label-sm text-on-surface">शिक्षक: हिंदी (Hindi)</span><span class="material-symbols-outlined text-secondary text-[16px]">sync_alt</span><span class="font-label-sm text-label-sm text-secondary font-bold">छात्र: संथाली (Santhali / ᱥᱟᱱᱛᱟᱲᱤ)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]"><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a aria-current="page" class="px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]" data-path="lessons" href="#">Lessons</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="worksheets" href="#">Worksheets</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dictionary" href="#">Dictionary</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end"><span class="font-label-md text-label-md text-on-surface font-bold">सुनीता शर्मा (Sunita Sharma)</span><span class="font-label-sm text-label-sm text-on-surface-variant">Primary Class 3</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="w-full px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop py-space-md">
+<div class="flex flex-col lg:flex-row items-start justify-between gap-space-sm mb-space-md pb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+            सक्रिय कक्षा • Live Stream Active
+          </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm" id="session-badge">| सत्र आईडी: BHS-304-SAN</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface flex items-center gap-space-xs">
+<span id="live-title">कक्षा ३ • पौधों के भाग (Parts of a Plant)</span>
+<span class="text-outline font-body-md text-body-md font-normal" id="live-title-sat">/ ᱫᱟᱨᱮ ᱨᱮᱱᱟᱜ ᱦᱟᱹᱴᱤᱧ</span>
+</h1>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">cast_connected</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface leading-none">प्रोजेक्टर सिंक</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">1080p • 60Hz Active</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">tablet_android</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface leading-none">छात्र टैबलेट्स</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">28 / 28 कनेक्टेड</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[18px]">wifi_tethering</span>
+<span>स्थानीय लैन (0.19s)</span>
+</div>
+</div>
+</div>
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<section class="lg:col-span-5 flex flex-col gap-space-md w-full">
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-label-sm">T</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block font-bold">शिक्षक वाणी इनपुट (Teacher Mic)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Devanagari Speech Recognition</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>लाइव स्ट्रीम</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md p-space-sm bg-surface-container rounded-lg">
+<button class="relative group flex-shrink-0 w-20 h-20 rounded-full bg-primary text-on-primary flex flex-col items-center justify-center shadow-md active:translate-y-0.5 transition-all" id="micButton">
+<span class="material-symbols-outlined text-[32px] leading-none" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span class="text-[10px] font-label-sm tracking-wider uppercase mt-1">सुन रहा है</span>
+<span class="absolute -inset-1 rounded-full bg-primary/20 animate-pulse pointer-events-none"></span>
+</button>
+<div class="flex-1 w-full flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span>
+                  ध्वनि तरंग (Waveform)
+                </span>
+<button class="px-2 py-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" id="toggleSpeechBtn">
+<span class="material-symbols-outlined text-[14px]">pause</span>
+<span>रोकें / Pause</span>
+</button>
+</div>
+<div class="h-10 bg-surface-container-lowest rounded-md px-2 flex items-center justify-between gap-1 overflow-hidden">
+<span class="w-1.5 bg-primary rounded-full h-3 animate-pulse"></span>
+<span class="w-1.5 bg-primary rounded-full h-6 animate-pulse" style="animation-delay: 75ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-8 animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-4 animate-pulse" style="animation-delay: 220ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-9 animate-pulse" style="animation-delay: 300ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-7 animate-pulse" style="animation-delay: 100ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-3 animate-pulse" style="animation-delay: 180ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-5 animate-pulse" style="animation-delay: 260ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-8 animate-pulse" style="animation-delay: 120ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-4 animate-pulse" style="animation-delay: 90ms;"></span>
+<span class="w-1.5 bg-primary rounded-full h-2 animate-pulse" style="animation-delay: 210ms;"></span>
+</div>
+<span class="text-[11px] font-label-sm text-on-surface-variant truncate">माइक्रोफोन: Shure Lavalier (Auto-Gain Low Noise)</span>
+</div>
+</div>
+<div class="mt-space-sm p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">record_voice_over</span>
+                शिक्षक कथन (Hindi Speech Real-time)
+              </span>
+<span class="text-[11px] font-label-sm text-secondary font-bold" id="stt-confidence">आश्वस्त (98.4%)</span><span class="text-[11px] font-label-sm text-on-surface-variant ml-2" id="pipeline-status"></span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-snug" id="teacher-statement">
+              “पौधों को बढ़ने के लिए धूप और पानी की जरूरत होती है।”
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 italic" id="teacher-gloss">
+              "Plants need sunlight and water to grow."
+            </p>
+</div>
+<div class="mt-space-sm px-space-sm py-2 rounded-lg bg-surface-container-high flex items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-1.5 overflow-hidden">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span id="engine-strip" class="font-label-sm text-label-sm truncate">STT ➔ संथाली अनुवादक ➔ ऑल चिकी वॉयस (0.2s विलंबता)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold whitespace-nowrap">लोकल AI तैयार</span>
+</div>
+</div>
+<div class="w-full bg-secondary-container/40 rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">contact_support</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">छात्र संदेह (Student Question)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">पॉडियम माइक्रोफोन या छात्र टैबलेट</span>
+</div>
+</div>
+<span id="doubt-count" class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">1 नया प्रश्न</span>
+</div>
+<div class="mt-space-sm p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mb-1">
+<span class="font-bold text-secondary flex items-center gap-1" id="doubt-student">
+<span class="material-symbols-outlined text-[14px]">person</span>
+                बिरसा मुर्मू (Birsa Murmu - Roll 14)
+              </span>
+<span>संथाली ऑडियो इनपुट</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-high flex flex-col gap-1 mb-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide" id="doubt-sat">
+                  “ᱫᱟᱨᱮ ᱪᱮᱫᱟᱜ ᱥᱤᱛᱩᱝ ᱞᱟᱹᱠᱛᱤᱭᱟ?”
+                </span>
+<button class="w-7 h-7 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center hover:bg-secondary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic" id="doubt-phonetic">
+                (Dare chedag situng laktiya? • पौधों को धूप की आवश्यकता क्यों होती है?)
+              </span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+                  अनुशंसित पाठ्यपुस्तक उत्तर (NCERT Class 3 EVS Bridge)
+                </span>
+<span id="doubt-badge" class="font-label-sm text-label-sm text-secondary font-bold">सत्यापित</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed" id="doubt-answer">
+                “धूप से पत्तियां भोजन बनाती हैं (प्रकाश संश्लेषण / ᱪᱟᱸᱫᱚ ᱥᱤᱛᱩᱝ ᱛᱮ ᱥᱟᱠᱟᱢ ᱡᱚᱢᱟᱜ ᱛᱮᱭᱟᱨᱟ)।”
+              </p>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:translate-y-0.5 transition-all" id="show-answer-btn">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span>प्रोजेक्टर पर उत्तर दिखाएं</span>
+</button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" id="dismiss-question-btn">
+                खारिज करें
+              </button>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">त्वरित कक्षा नियंत्रण (Quick Tablet Actions)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">स्लाइड ४ / १२</span id="slide-counter">
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs">
+<button id="prev-slide-btn" class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm active:translate-y-0.5 transition-all text-center">
+<span class="material-symbols-outlined text-[24px] text-outline mb-1">arrow_back</span>
+<span class="font-label-md text-label-md font-bold">पिछली स्लाइड</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Slide 3</span>
+</button>
+<button id="next-slide-btn" class="flex flex-col items-center justify-center p-3 rounded-lg bg-primary-container text-on-primary-container shadow-sm active:translate-y-0.5 transition-all text-center">
+<span class="material-symbols-outlined text-[24px] mb-1">arrow_forward</span>
+<span class="font-label-md text-label-md font-bold">अगली स्लाइड</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant">Slide 5</span>
+</button>
+<button id="replay-btn" class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm active:translate-y-0.5 transition-all text-center">
+<span class="material-symbols-outlined text-[24px] text-tertiary mb-1">replay</span>
+<span class="font-label-md text-label-md font-bold">पुनः सुनाएं</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Santhali TTS</span>
+</button>
+<button id="flashcard-btn" class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm active:translate-y-0.5 transition-all text-center">
+<span class="material-symbols-outlined text-[24px] text-secondary mb-1">style</span>
+<span class="font-label-md text-label-md font-bold">फ्लैशकार्ड खोलें</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Visual Grid</span>
+</button>
+<button id="send-worksheet-btn" class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm active:translate-y-0.5 transition-all text-center">
+<span class="material-symbols-outlined text-[24px] text-primary mb-1">send_to_mobile</span>
+<span class="font-label-md text-label-md font-bold">कार्यपत्र भेजें</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Push Worksheet</span>
+</button>
+<button id="end-lesson-btn" class="flex flex-col items-center justify-center p-3 rounded-lg bg-error-container hover:bg-on-error text-on-error-container shadow-sm active:translate-y-0.5 transition-all text-center">
+<span class="material-symbols-outlined text-[24px] mb-1">stop_circle</span>
+<span class="font-label-md text-label-md font-bold">पाठ समाप्त करें</span>
+<span class="font-label-sm text-label-sm">Save &amp; Exit</span>
+</button>
+</div>
+</div>
+</section>
+<section class="lg:col-span-7 flex flex-col gap-space-sm w-full">
+<div class="w-full bg-surface-container-highest px-space-md py-2.5 rounded-t-xl flex flex-wrap items-center justify-between gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1">
+<span>📽️ प्रोजेक्टर दृश्य (Projector Beam Preview)</span>
+</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+              30+ फीट पठनीय • High-Contrast Mode
+            </span>
+<span class="material-symbols-outlined text-outline text-[18px]">fullscreen</span>
+</div>
+</div>
+<div class="relative w-full rounded-b-xl overflow-hidden shadow-xl bg-[#13281E] text-[#F9F7F1] flex flex-col p-space-md md:p-space-xl">
+<div class="flex items-center justify-between pb-space-md border-b border-[#244636]">
+<div class="flex flex-col">
+<span class="text-[12px] uppercase font-label-sm tracking-wider text-[#A7D7C1] font-bold">विषय २.४ • जीवन विज्ञान (Environmental Science)</span>
+<h2 class="font-headline-lg text-headline-lg text-[#FFFFFF]" id="projector-title">
+                पौधों के पोषण की मूल बातें (Dare Reag Jomak')
+              </h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="px-3 py-1.5 rounded-lg bg-[#1E3F30] text-[#DCEFE5] flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-[#A7D7C1]">volume_up</span>
+<span>ᱵᱟᱝᱞᱟ / Ol Chiki Audio ON</span>
+</div>
+</div>
+</div>
+<div class="my-space-md p-space-md rounded-xl bg-[#1C3B2D] shadow-md flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-label-sm text-[#A7D7C1] tracking-wider uppercase font-bold">
+                ᱥᱟᱱᱛᱟᱲᱤ ᱥᱟᱵᱽᱴᱟᱭᱴᱟᱹᱞ (Santhali Ol Chiki Live Stream)
+              </span>
+<span class="flex items-center gap-1 text-[11px] text-[#FFD6AD] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#E57828] animate-ping"></span>
+                Realtime Speech Match
+              </span>
+</div>
+<div class="font-vernacular-glyph-lg text-vernacular-glyph-lg md:text-[38px] md:leading-[48px] text-[#FFE8C2] font-semibold tracking-wide" id="projector-sat">
+              “ᱫᱟᱨᱮ ᱦᱟᱨᱟᱜ ᱞᱟᱹᱜᱤᱫ ᱥᱤᱛᱩᱝ ᱟᱨ ᱫᱟᱜ ᱞᱟᱹᱠᱛᱤᱭᱟᱹ”
+            </div>
+<div class="font-body-lg text-body-lg text-[#D8E6DE] italic" id="projector-phonetic">
+              (Dare harag lagid situng ar daag laktiya)
+            </div>
+<div class="mt-1 pt-2 border-t border-[#2B5441] flex items-center gap-space-xs text-[#FFF0D4] font-headline-sm text-headline-sm">
+<span class="text-[12px] px-1.5 py-0.5 rounded bg-[#974300] text-[#FFFFFF] font-bold uppercase font-label-sm">हिंदी</span>
+<span id="projector-hi">&ldquo;पौधों को बड़े होने के लिए धूप और पानी चाहिए।&rdquo;</span>
+</div>
+</div>
+<!-- Pre-stored Flashcard Match (curated deck, never live LLM-generated) -->
+<div class="w-full hidden bg-[#1C3B2D] rounded-xl p-space-md shadow-md border border-[#2B5441]" id="flashcard-match-box">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-[#FFD6AD] text-[18px]">style</span>
+<span class="font-label-sm text-label-sm text-[#FFE8C2] font-bold" id="flashcard-match-title">Pre-stored Flashcard • सत्यापित</span>
+<span class="ml-auto px-2 py-0.5 rounded bg-[#974300] text-[#FFFFFF] font-label-sm font-bold uppercase" id="flashcard-match-concept">Library Card</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#DCEFE5]" id="flashcard-match-desc"></p>
+</div>
+<div class="w-full bg-[#183427] rounded-xl p-space-md shadow-md flex flex-col md:flex-row gap-space-lg items-center">
+<div class="w-full md:w-1/2 flex flex-col items-center">
+<div class="w-full h-64 rounded-lg overflow-hidden relative shadow-inner bg-[#0E2018]">
+<img class="w-full h-full object-cover" data-alt="Rich warm chalk-and-gouache textbook illustration of a vibrant green classroom plant growing in brown soil under golden morning sunlight with clear shimmering raindrops absorbed by healthy white root hairs, designed for Indian vernacular elementary school pedagogy with clear visual arrows and high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHIDMg4sU9bzdNTUo-0uGY7qBg-8lmS7My2_tkPg7Njr6J6wsTos1EiX2l_sVn_93OwLiRfTAgxygPJXQPNuFD5nFdJTGuILPQOkxmYBPxqw3HUWJ0HT_VPKjEvPY2Oh4H1d9ZzhQf2zEMxOeJSO8SdHlOGp73Rv9fkSSTEJRFDne5DImv3L3n-f8GcJ37IzPt1EcFeSnYnJP-irDJX2MzNzoQ3REja_tk1s0P495JAN5ivqtDZ20q"/>
+<div class="absolute bottom-2 left-2 right-2 px-2.5 py-1.5 rounded bg-[#102419]/90 backdrop-blur-sm text-center">
+<span class="font-label-md text-label-md text-[#FFF5E6] font-bold" id="flashcard-caption">
+                    ᱪᱤᱛᱟᱹᱨ: ᱥᱤᱛᱩᱝ ᱟᱨ ᱫᱟᱜ (Sunlight &amp; Water)
+                  </span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-[#E57828] text-white flex items-center justify-center font-bold text-label-md">१</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-[#FFE8C2] leading-tight">
+                    ᱥᱤᱛᱩᱝ (धूप / Sunlight)
+                  </h4>
+<p class="font-body-md text-body-md text-[#D8E6DE]">
+                    ᱥᱟᱠᱟᱢ ᱡᱚᱢᱟᱜ ᱛᱮᱭᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱪᱟᱸᱫᱚ ᱥᱤᱛᱩᱝ ᱠᱷᱚᱱ ᱫᱟᱲᱮ ᱧᱟᱢᱟᱭ᱾
+                  </p>
+<p class="font-body-sm text-body-sm text-[#A7D7C1] italic">
+                    (Leaves take energy from the sun to cook food for the plant)
+                  </p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-[#2C5F8D] text-white flex items-center justify-center font-bold text-label-md">२</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-[#FFE8C2] leading-tight">
+                    ᱫᱟᱜ (पानी / Water)
+                  </h4>
+<p class="font-body-md text-body-md text-[#D8E6DE]">
+                    ᱨᱮᱦᱮᱛ ᱦᱟᱥᱟ ᱠᱷᱚᱱ ᱫᱟᱜ ᱟᱨ ᱠᱷᱟᱫᱽ ᱴᱟᱱᱟᱣ ᱟᱛᱮ ᱪᱮᱛᱟᱱ ᱥᱮᱫ ᱵᱷᱮᱡᱟᱭᱟᱭ᱾
+                  </p>
+<p class="font-body-sm text-body-sm text-[#A7D7C1] italic">
+                    (Roots absorb water and nutrients from moist soil)
+                  </p>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-[#224735] flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[#FFE8C2] text-[20px]">emoji_objects</span>
+<span class="font-label-sm text-label-sm text-[#FFF5E6]">
+                  छात्र अभ्यास: दोनों बच्चे अपनी स्लेट पर "ᱥᱤᱛᱩᱝ" (धूप) लिखकर दिखाएं।
+                </span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-[#244636] flex flex-wrap items-center justify-between text-[#A7D7C1] text-label-sm font-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#4BD18E]"></span>
+                Projector: 1920×1080 Native 16:9
+              </span>
+<span>•</span>
+<span>कक्षा वॉल प्रोजेक्शन: स्पष्ट 100%</span>
+</div>
+<div class="flex items-center gap-1 text-[#FFE8C2]">
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span>ऑफ़लाइन लोकल मेश हॉटस्पॉट एक्टिव</span>
+</div>
+</div>
+</div>
+<div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">spellcheck</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">ध्वनि वर्तनी सुधार</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ol Chiki Santhali Mode</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">speed</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">ट्रांसलेशन लेटेंसी</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">190ms (शून्य लैग)</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[24px]">cloud_off</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">नेटवर्क स्थिति</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">100% स्थानीय सर्वर</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // BhashaSetu Live Classroom - wired to the Flask backend.
+  var DEFAULT_LESSON = 'lesson-parts-of-a-plant';
+  var DEFAULT_WORKSHEET = 'worksheet-parts-of-a-plant';
+  var URL_PARAMS = new URLSearchParams(window.location.search);
+  var LESSON_ID = URL_PARAMS.get('lesson_id') || localStorage.getItem('bhashasetu_lesson_id') || DEFAULT_LESSON;
+  var WORKSHEET_ID = URL_PARAMS.get('worksheet_id') || localStorage.getItem('bhashasetu_worksheet_id') || DEFAULT_WORKSHEET;
+
+  var API = window.BhashaSetuAPI;
+
+  // Concept deck - everything is pre-stored (never live LLM-generated).
+  // `sat` / `phonetic` are copied verbatim from data/dictionary/seed.json
+  // (see santali_ol_chiki / pronunciation fields) — not invented here.
+  var CONCEPT_DECK = [
+    { key: 'root', hi: 'Roots / जड़', en: 'Root', sat: 'ᱨᱮᱦᱮᱫ', phonetic: 'Reh-hed', caption: 'Stem anchor • Soil' },
+    { key: 'stem', hi: 'Stem / तना', en: 'Stem', sat: 'ᱜᱚᱜᱚ', phonetic: 'Go-go', caption: 'Water highway • Transport' },
+    { key: 'leaf', hi: 'Leaf / पत्ती', en: 'Leaf', sat: 'ᱥᱟᱠᱟᱢ', phonetic: 'Sa-kaam', caption: 'Food factory • Photosynthesis' },
+    { key: 'flower', hi: 'Flower / फूल', en: 'Flower', sat: 'ᱵᱟᱦᱟ', phonetic: 'Ba-haa', caption: 'Life cycle • Seed maker' },
+    { key: 'sunlight-water', hi: 'Sunlight & Water / जल और धूप', en: 'Sunlight & Water', sat: 'ᱥᱮᱛᱟᱜ ᱟᱨ ᱫᱟᱜ', phonetic: 'Se-tung ar Daag', caption: 'Growth needs • Light + Water' },
+  ];
+  var SENTENCE_CONCEPT = [
+    { match: ['जड़', 'मिट्टी', 'होल्ड', 'जमीन'], key: 'root' },
+    { match: ['तना', 'पानी पहुँचता', 'मार्ग'], key: 'stem' },
+    { match: ['पत्ती', 'पत्तियां', 'भोजन बनाती'], key: 'leaf' },
+    { match: ['फूल', 'बीज'], key: 'flower' },
+    { match: ['धूप', 'पानी चाहिए', 'सिंचाई'], key: 'sunlight-water' },
+  ];
+
+  function escHtml(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function hiNum(n) {
+    var m = { 0: '०', 1: '१', 2: '२', 3: '३', 4: '४', 5: '५', 6: '६', 7: '७', 8: '८', 9: '९' };
+    return String(n).split('').map(function (d) { return m[d] || d; }).join('');
+  }
+  function normKey(c) {
+    return String(c || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') || 'concept';
+  }
+
+  var flashcards = [];
+  var currentIndex = 0;
+  var pipelineActive = false;
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  // Pre-stored flashcard metadata (curated, stored locally).
+  var STORED = {
+    root: { title: 'Roots hold the plant in the soil', desc: 'Roots anchor the plant in the soil and absorb water and nutrients. The flashcard is pulled from the pre-stored curriculum library, never generated live.' },
+    stem: { title: 'The stem carries water upward', desc: 'The stem transports water and food between roots and leaves the plant’s water highway.' },
+    leaf: { title: 'Leaves cook food for the plant', desc: 'Leaves use sunlight to make food for the plant (photosynthesis).' },
+    flower: { title: 'Flowers mature into seeds and fruit', desc: 'The flower is the reproductive part - it becomes the seed and fruit that grow new plants.' },
+    'sunlight-water': { title: 'Plants need sunlight & water to grow', desc: 'Every plant needs sunlight for energy and water for moving nutrients. These reach every part of the plant.' },
+  };
+
+  function cardForConcept(key) {
+    var i;
+    if (flashcards.length) {
+      for (i = 0; i < flashcards.length; i++) {
+        if (normKey(flashcards[i].concept) === key) {
+          return { title: flashcards[i].title || flashcards[i].short_explanation || '', desc: flashcards[i].short_explanation || '' };
+        }
+      }
+    }
+    var local = STORED[key] || STORED['sunlight-water'];
+    return { title: local.title, desc: local.desc };
+  }
+
+  function hindiPart(concept) {
+    var parts = String(concept.hi || '').split('/');
+    return (parts[1] || parts[0] || '').trim();
+  }
+
+  function renderSlide() {
+    var concept = CONCEPT_DECK[currentIndex] || CONCEPT_DECK[0];
+    var card = cardForConcept(concept.key);
+
+    var counter = $('slide-counter');
+    if (counter) counter.textContent = 'स्लाइड ' + hiNum(currentIndex + 1) + ' / ' + hiNum(CONCEPT_DECK.length);
+
+    var box = $('flashcard-match-box');
+    if (box) {
+      box.classList.remove('hidden');
+      var t = $('flashcard-match-title');
+      if (t) t.textContent = 'Pre-stored Flashcard • ' + concept.en;
+      var c = $('flashcard-match-concept');
+      if (c) c.textContent = concept.en.toUpperCase();
+      var d = $('flashcard-match-desc');
+      if (d) d.textContent = card.desc;
+    }
+
+    var pTitle = $('projector-title');
+    if (pTitle) pTitle.textContent = concept.hi + " (Dare Reag Jomak')";
+
+    // The big projector Santali/phonetic/Hindi trio and the flashcard image
+    // caption were previously frozen at whatever was hardcoded in the HTML —
+    // Previous/Next only ever touched the counter, title, and sidebar match
+    // box above. Drive all of it from the same concept so paging the deck
+    // actually changes what the class sees on the projector.
+    var pSat = $('projector-sat');
+    if (pSat) pSat.textContent = '\u201C' + concept.sat + '\u201D';
+    var pPhonetic = $('projector-phonetic');
+    if (pPhonetic) pPhonetic.textContent = '(' + concept.phonetic + ')';
+    var pHi = $('projector-hi');
+    if (pHi) pHi.textContent = '\u201C' + hindiPart(concept) + '\u201D';
+    var fCaption = $('flashcard-caption');
+    if (fCaption) fCaption.textContent = concept.sat + ' (' + concept.en + ')';
+  }
+
+  function showFlashcardBox(show) {
+    var box = $('flashcard-match-box');
+    if (box) box.classList.toggle('hidden', !show);
+  }
+
+  function matchConceptFromText(text) {
+    var t = String(text || '');
+    for (var i = 0; i < SENTENCE_CONCEPT.length; i++) {
+      var rule = SENTENCE_CONCEPT[i];
+      for (var j = 0; j < rule.match.length; j++) {
+        if (t.indexOf(rule.match[j]) !== -1) return rule.key;
+      }
+    }
+    return null;
+  }
+
+  // ================= Microphone bridge: real audio -> /api/speech/transcribe ================
+  var micSession = null; // { recorder, blobPromise, safetyTimer }
+  var micButtonEl = null;
+  var toggleSpeechBtn = null;
+
+  function setMicStatus(msg) {
+    var status = $('pipeline-status');
+    if (status && msg) status.textContent = msg;
+    console.log('[STATUS] ' + msg);
+  }
+
+  function setMicUI(recording) {
+    if (!micButtonEl) return;
+    var lbl = micButtonEl.querySelector('span:nth-child(2)');
+    if (recording) {
+      micButtonEl.classList.remove('bg-surface-variant', 'text-on-surface');
+      micButtonEl.classList.add('bg-primary', 'text-on-primary');
+      if (lbl) lbl.textContent = 'सुन रहा है';
+      if (toggleSpeechBtn) toggleSpeechBtn.innerHTML = '<span class="material-symbols-outlined text-[14px]">pause</span><span>रोकें / Stop</span>';
+    } else {
+      micButtonEl.classList.add('bg-surface-variant', 'text-on-surface');
+      micButtonEl.classList.remove('bg-primary', 'text-on-primary');
+      if (lbl) lbl.textContent = 'माइक';
+      if (toggleSpeechBtn) toggleSpeechBtn.innerHTML = '<span class="material-symbols-outlined text-[14px]">mic</span><span>बोलें / Speak</span>';
+    }
+  }
+
+  function startMicRecording() {
+    if (micSession) { stopMicRecording(); return; }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      console.error('[MIC] getUserMedia is not available in this browser');
+      setMicStatus('इस ब्राउज़र में माइक्रोफ़ोन उपलब्ध नहीं है — डेमो वाक्य दिखाया गया');
+      runPipeline();
+      return;
+    }
+    console.log('[MIC] permission requested');
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function (stream) {
+        console.log('[MIC] permission granted (' + (stream.getAudioTracks() || []).length + ' track)');
+        var recorder;
+        try { recorder = new MediaRecorder(stream); }
+        catch (e) {
+          console.error('[MIC] MediaRecorder unavailable: ' + e.message);
+          stream.getTracks().forEach(function (t) { t.stop(); });
+          setMicStatus('माइक असमर्थित (MediaRecorder उपलब्ध नहीं) — डेमो वाक्य दिखाया गया');
+          runPipeline();
+          return;
+        }
+        var chunks = [];
+        var blobResolve, blobReject;
+        var blobPromise = new Promise(function (res, rej) { blobResolve = res; blobReject = rej; });
+        recorder.ondataavailable = function (e) {
+          if (e.data && e.data.size) { chunks.push(e.data); console.log('[MIC] chunk received (' + e.data.size + ' B)'); }
+        };
+        recorder.onerror = function () {
+          console.error('[MIC] MediaRecorder error');
+          stream.getTracks().forEach(function (t) { t.stop(); });
+          blobReject(new Error('MediaRecorder error'));
+        };
+        recorder.onstop = function () {
+          var type = recorder.mimeType || 'audio/webm';
+          var blob = new Blob(chunks, { type: type });
+          chunks.length = 0;
+          console.log('[MIC] recording stopped → blob (' + type + ', ' + blob.size + ' B)');
+          micSession = null;
+          stream.getTracks().forEach(function (t) { t.stop(); });
+          blobResolve(blob);
+        };
+        micSession = { recorder: recorder, blobPromise: blobPromise, safetyTimer: null };
+        micSession.safetyTimer = setTimeout(function () {
+          if (micSession && micSession.recorder && micSession.recorder.state === 'recording') {
+            console.log('[MIC] safety auto-stop (15s)');
+            micSession.recorder.stop();
+          }
+        }, 15000);
+        recorder.start();
+        console.log('[MIC] recording started (' + recorder.mimeType + ')');
+        setMicUI(true);
+        setMicStatus('सुन रहा है… बोलें और फिर रोकें दबाएँ');
+      })
+      .catch(function (err) {
+        console.error('[MIC] permission denied / getUserMedia failed: ' + (err && err.message));
+        setMicStatus('माइक की अनुमति नहीं मिली — डेमो वाक्य दिखाया गया');
+        runPipeline();
+      });
+  }
+
+  function stopMicRecording() {
+    if (!micSession) { runPipeline(); return; }
+    var recorder = micSession.recorder;
+    var p = micSession.blobPromise;
+    if (micSession.safetyTimer) clearTimeout(micSession.safetyTimer);
+    setMicStatus('प्रोसेसिंग… (transcribe)');
+    pipelineActive = true;
+    try { recorder.stop(); } catch (e) { p = Promise.reject(e); }
+    p.then(sendAudioToBackend)
+      .catch(function (err) {
+        console.warn('[ASR] audio send failed: ' + (err && err.message));
+        setMicStatus('ऑडियो भेजा नहीं जा सका — डेमो वाक्य दिखाया गया');
+        runPipeline();
+      })
+      .finally(function () { pipelineActive = false; });
+  }
+
+  function sendAudioToBackend(blob) {
+    var fd = new FormData();
+    fd.append('audio', blob, 'speech.webm');
+    fd.append('expected_language', 'hi');
+    fd.append('demo_key', 'teacher_default');
+    console.log('[ASR] sending audio to /api/speech/transcribe (' + blob.size + ' B, field=audio, multipart)');
+    return API.transcribe(fd).then(function (asr) {
+      console.log('[ASR] response received → mode=' + asr.mode + ' engine=' + (asr.engine || '?'));
+      return applyAsrAndTranslate(asr);
+    });
+  }
+
+  function applyAsrAndTranslate(asr) {
+    var text = asr.text || '';
+    var statement = $('teacher-statement');
+    if (statement) statement.textContent = '“' + text + '”';
+    var confidence = $('stt-confidence');
+    if (confidence) confidence.textContent = (asr.mode === 'real' ? 'Vosk • Real' : 'Demo ASR');
+
+    setMicUI(false);
+    setMicStatus('अनुवाद हो रहा है…');
+    console.log('[TRANSLATE] sending Hindi text → /api/translate');
+
+    return API.translate(text, 'hi', 'sat').then(function (trans) {
+      console.log('[TRANSLATE] response received → mode=' + trans.mode + ' engine=' + (trans.engine || '?'));
+
+      if (confidence) {
+        var aiLabel = API.getAIStatusLabel(trans);
+        confidence.textContent = aiLabel.text;
+      }
+
+      var satEl = $('projector-sat');
+      if (satEl) satEl.textContent = '“' + trans.translated_text + '"';
+
+      var hiEl = $('projector-hi');
+      if (hiEl) hiEl.textContent = '“' + text + '"';
+
+      var glossEl = $('teacher-gloss');
+      if (glossEl) glossEl.style.display = trans.mode === 'real' ? 'none' : '';
+
+      console.log('[PROJECTOR] updated — Hindi + Santali lines rendered');
+
+      var key = matchConceptFromText(text);
+      if (!key && trans.flashcard) key = normKey(trans.flashcard.concept);
+
+      var phonEl = $('projector-phonetic');
+      if (phonEl) {
+        var conc = null;
+        for (var i = 0; i < CONCEPT_DECK.length; i++) {
+          if (CONCEPT_DECK[i].key === key) { conc = CONCEPT_DECK[i]; break; }
+        }
+        phonEl.textContent = conc ? '(' + conc.phonetic + ')' : '(Live vernacular bridge active)';
+      }
+
+      if (key) {
+        for (var k = 0; k < CONCEPT_DECK.length; k++) {
+          if (CONCEPT_DECK[k].key === key) { currentIndex = k; break; }
+        }
+        var concept = CONCEPT_DECK[currentIndex];
+        var card = cardForConcept(concept.key);
+        var box = $('flashcard-match-box');
+        if (box) {
+          box.classList.remove('hidden');
+          var t = $('flashcard-match-title');
+          if (t) t.textContent = 'Pre-stored Flashcard \u2022 ' + concept.en;
+          var c = $('flashcard-match-concept');
+          if (c) c.textContent = concept.en.toUpperCase();
+          var d = $('flashcard-match-desc');
+          if (d) d.textContent = card.desc;
+        }
+        var counter = $('slide-counter');
+        if (counter) counter.textContent = '\u0938\u094D\u0932\u093E\u0907\u0921 ' + hiNum(currentIndex + 1) + ' / ' + hiNum(CONCEPT_DECK.length);
+      }
+
+      var engineStrip = $('engine-strip');
+      if (engineStrip) {
+        var asrName = (asr.engine || asr.mode || '?') + (asr.mode === 'real' ? '' : ' (demo)');
+        var mtName = (trans.engine || trans.mode || '?') + ((trans.mode && trans.mode !== 'fallback') ? '' : ' (labelled fallback)');
+        engineStrip.textContent = 'STT ➔ ' + asrName + ' • MT ➔ ' + mtName;
+      }
+      setMicStatus('सफल — प्रोजेक्टर अपडेट हुआ');
+      return trans;
+    });
+  }
+
+  // Demo / replay path: deterministic fill, no microphone needed.
+  function runPipeline() {
+    if (!API || pipelineActive) return;
+    pipelineActive = true;
+    API.transcribe({ demo_key: 'teacher_default', expected_language: 'hi' })
+      .then(applyAsrAndTranslate)
+      .catch(function (err) {
+        console.warn('Live pipeline error', err);
+      })
+      .finally(function () {
+        pipelineActive = false;
+      });
+  }
+
+  function refreshDoubt() {
+    if (!API) return;
+    API.submitDoubt({ demo_key: 'student_doubt' })
+      .then(function (doubt) {
+        var satEl = $('doubt-sat');
+        if (satEl) satEl.textContent = '“' + escHtml(doubt.santhali_question || doubt.question || '') + '”';
+
+        var phonEl = $('doubt-phonetic');
+        if (phonEl) {
+          phonEl.innerHTML = '(' + escHtml(doubt.modes.speech === 'real' ? 'Student voice input' : 'Demo Santali question') + ' • ' + escHtml(doubt.hindi_question || '') + ')';
+        }
+
+        var answer = $('doubt-answer');
+        if (answer) {
+          var eng = doubt.explanation || 'Plants use sunlight, water and air in their leaves to make their own food.';
+          answer.textContent = '“' + eng + '”';
+        }
+
+        var badge = $('doubt-badge');
+        if (badge) {
+          var st = doubt.modes || {};
+          // Honest AI label: only claims Qwen when the backend mode is 'real'.
+          var llmLabel = API.getAIStatusLabel({ mode: st.llm, engine: st.llm_engine });
+          badge.textContent = (st.retrieval === 'local-index' ? 'लोकल इंडेक्स' : 'RAG') + ' • ' + llmLabel.text;
+          badge.className = 'font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full ' +
+            (llmLabel.status === 'real' ? 'bg-secondary text-on-secondary' : 'bg-surface-container text-on-surface-variant');
+        }
+      })
+      .catch(function (err) { console.warn('Doubt refresh error', err); });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!API) return;
+
+    var badge = $('session-badge');
+    if (badge) badge.textContent = '| सत्र आईडी: ' + (URL_PARAMS.get('session_id') || localStorage.getItem('bhashasetu_session_id') || 'BHS-304-SAN');
+
+    Promise.all([
+      API.get('/api/lessons/' + LESSON_ID).catch(function () { return null; }),
+      API.get('/api/flashcards?lesson=' + LESSON_ID).catch(function () { return []; }),
+    ]).then(function (res) {
+      var cards = res[1];
+      flashcards = Array.isArray(cards) ? cards : (cards && cards.data) || [];
+      renderSlide();
+    });
+
+    micButtonEl = $('micButton');
+    toggleSpeechBtn = $('toggleSpeechBtn');
+    var onMicClick = function () { if (micSession) stopMicRecording(); else startMicRecording(); };
+    if (micButtonEl && toggleSpeechBtn) {
+      micButtonEl.addEventListener('click', onMicClick);
+      toggleSpeechBtn.addEventListener('click', onMicClick);
+    }
+
+    refreshDoubt();
+
+    var nextBtn = $('next-slide-btn');
+    if (nextBtn) nextBtn.addEventListener('click', function () { currentIndex = (currentIndex + 1) % CONCEPT_DECK.length; renderSlide(); });
+    var prevBtn = $('prev-slide-btn');
+    if (prevBtn) prevBtn.addEventListener('click', function () { currentIndex = (currentIndex - 1 + CONCEPT_DECK.length) % CONCEPT_DECK.length; renderSlide(); });
+
+    var replayBtn = $('replay-btn');
+    if (replayBtn) replayBtn.addEventListener('click', runPipeline);
+
+    var flashBtn = $('flashcard-btn');
+    if (flashBtn) {
+      flashBtn.addEventListener('click', function () {
+        var box = $('flashcard-match-box');
+        if (box) showFlashcardBox(box.classList.contains('hidden'));
+      });
+    }
+
+    var showAnswer = $('show-answer-btn');
+    if (showAnswer) {
+      showAnswer.addEventListener('click', function () {
+        var answer = $('doubt-answer');
+        var hiEl = $('projector-hi');
+        if (answer && hiEl) hiEl.textContent = '“' + answer.textContent.replace(/[“”]/g, '') + '”';
+        showFlashcardBox(true);
+      });
+    }
+
+    var dismiss = $('dismiss-question-btn');
+    if (dismiss) {
+      dismiss.addEventListener('click', function () {
+        var panel = $('doubt-count');
+        if (panel) panel.textContent = '0 नए प्रश्न';
+        var satEl = $('doubt-sat');
+        if (satEl) satEl.textContent = '“— (खारिज) —”';
+        var answer = $('doubt-answer');
+        if (answer) answer.textContent = 'दूसरा प्रश्न आने पर प्रोजेक्टर पर दिखाया जाएगा।';
+      });
+    }
+
+    var sendWs = $('send-worksheet-btn');
+    if (sendWs) sendWs.addEventListener('click', function () {
+      window.location.href = '/worksheet?worksheet_id=' + WORKSHEET_ID + '&student_id=S-1002&mode=demo-student';
+    });
+
+    var endLesson = $('end-lesson-btn');
+    if (endLesson) endLesson.addEventListener('click', function () {
+      window.location.href = '/analytics?worksheet_id=' + WORKSHEET_ID + '&class_size=30';
+    });
+
+    runPipeline();
+  });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-grid-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">BhashaSetu</span><span class="font-body-sm text-body-sm">• Regional Vernacular Bridges for Primary Classrooms</span></div><div class="font-label-sm text-label-sm">© 2024 BhashaSetu Primary Education Platform. All rights reserved.</div></div></footer><script id="nav-router">
+(function () {
+  var ROUTES = { dashboard: '/dashboard', lessons: '/lesson-setup', worksheets: '/worksheet', analytics: '/analytics', dictionary: '/dictionary' };
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('a[data-path]') : null;
+    if (!el) return;
+    var to = ROUTES[el.getAttribute('data-path')];
+    if (!to) return;
+    e.preventDefault();
+    window.location.assign(to);
+  });
+})();
+</script>
+<script id="logout">
+(function () {
+  var avatar = document.querySelector('header .w-8.h-8.rounded-full');
+  if (!avatar) return;
+  avatar.title = 'Logout (बाहर निकलें)';
+  avatar.style.cursor = 'pointer';
+  avatar.addEventListener('click', function () {
+    if (!window.confirm('Log out of BhashaSetu?')) return;
+    try {
+      if (window.BhashaSetuAPI && BhashaSetuAPI.getToken()) {
+        fetch('/api/auth/logout', { method: 'POST', headers: { 'Authorization': 'Bearer ' + BhashaSetuAPI.getToken() }, body: '{}' }).catch(function () {});
+      }
+    } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_token'); } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_teacher'); } catch (e) {}
+    window.location.href = '/';
+  });
+})();
+</script>
+</body></html>

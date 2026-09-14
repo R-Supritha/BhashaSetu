@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error-container":"#93000a","surface-container-high":"#efe8d6","secondary-container":"#bbeed4","tertiary-fixed-dim":"#9bcbff","surface-bright":"#fff9ee","on-tertiary-fixed":"#001d34","on-primary-fixed-variant":"#763300","on-error":"#ffffff","on-tertiary-container":"#fdfcff","secondary":"#396753","on-primary":"#ffffff","inverse-primary":"#ffb68d","tertiary":"#2c5f8d","tertiary-fixed":"#d0e4ff","surface-variant":"#e9e2d0","on-surface":"#1e1b11","primary-fixed":"#ffdbc9","error":"#ba1a1a","background":"#fff9ee","on-secondary-fixed":"#002115","outline":"#8a7265","surface-dim":"#e1d9c8","on-secondary-container":"#3f6d59","on-primary-container":"#fffbff","on-background":"#1e1b11","surface-container-lowest":"#ffffff","surface-container":"#f5eddb","on-tertiary":"#ffffff","on-surface-variant":"#574237","on-tertiary-fixed-variant":"#0e4976","inverse-surface":"#343024","primary-container":"#be5600","surface":"#fff9ee","primary":"#974300","tertiary-container":"#4878a7","surface-container-low":"#fbf3e1","on-secondary":"#ffffff","outline-variant":"#dec1b2","surface-tint":"#9b4500","secondary-fixed":"#bbeed4","on-secondary-fixed-variant":"#204f3c","error-container":"#ffdad6","on-primary-fixed":"#331200","inverse-on-surface":"#f8f0de","primary-fixed-dim":"#ffb68d","surface-container-highest":"#e9e2d0","secondary-fixed-dim":"#a0d1b8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-2xl":"3rem","grid-margin-mobile":"1rem","space-2xs":"0.25rem","touch-target-min":"3rem","grid-gutter-tablet":"1.25rem","space-md":"1rem","space-sm":"0.75rem","grid-margin-desktop":"2.5rem","grid-margin-tablet":"1.5rem","space-lg":"1.5rem","grid-gutter-mobile":"0.75rem","space-xl":"2rem","space-3xl":"4rem","grid-gutter-desktop":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"body-md":["Noto Sans"],"display-hero":["Noto Serif"],"body-lg":["Noto Sans"],"headline-sm":["Noto Sans"],"label-md":["Noto Sans"],"label-sm":["Noto Sans"],"headline-lg-mobile":["Noto Serif"],"label-lg":["Noto Sans"],"headline-md":["Noto Serif"],"display-hero-mobile":["Noto Serif"],"vernacular-glyph-lg":["Noto Serif"],"body-sm":["Noto Sans"],"vernacular-glyph-sm":["Noto Sans"],"headline-lg":["Noto Serif"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-hero":["48px",{"lineHeight":"60px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-hero-mobile":["34px",{"lineHeight":"44px","fontWeight":"700"}],"vernacular-glyph-lg":["56px",{"lineHeight":"68px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"vernacular-glyph-sm":["28px",{"lineHeight":"36px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"42px","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-grid-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><svg class="h-8 w-auto" viewBox="10 10 46 40" xmlns="http://www.w3.org/2000/svg" aria-label="BhashaSetu Logo">
+<rect x="10" y="14" width="44" height="36" rx="8" fill="#fff3e0" stroke="#d96814" stroke-width="2"/>
+<path d="M16 42 C 26 26, 38 26, 48 42" fill="none" stroke="#d96814" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M32 28 L32 44" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+<circle cx="32" cy="22" r="3.5" fill="#d96814"/>
+<circle cx="20" cy="32" r="2" fill="#059669"/>
+<circle cx="44" cy="32" r="2" fill="#d96814"/>
+</svg><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BhashaSetu</span><span class="font-label-sm text-label-sm text-on-surface-variant">भाषासेतु • Primary Vernacular Pedagogy</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high"><span class="font-label-sm text-label-sm text-on-surface">शिक्षक: हिंदी (Hindi)</span><span class="material-symbols-outlined text-secondary text-[16px]">sync_alt</span><span class="font-label-sm text-label-sm text-secondary font-bold">छात्र: संथाली (Santhali / ᱥᱟᱱᱛᱟᱲᱤ)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]"><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lessons" href="#">Lessons</a><a aria-current="page" class="px-space-md py-2.5 transition-all bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_2px_0_0_#944205]" data-path="worksheets" href="#">Worksheets</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dictionary" href="#">Dictionary</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end"><span class="font-label-md text-label-md text-on-surface font-bold">सुनीता शर्मा (Sunita Sharma)</span><span class="font-label-sm text-label-sm text-on-surface-variant">Primary Class 3</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<script src="/assets/js/api.js"></script>
+<div class="w-full max-w-7xl mx-auto px-grid-margin-mobile md:px-grid-margin-tablet lg:px-grid-margin-desktop py-space-md md:py-space-lg flex flex-col gap-space-lg">
+<!-- ======================== LIBRARY VIEW (default when no worksheet_id) ======================== -->
+<div id="library-view" class="hidden flex-col gap-space-lg">
+  <div class="bg-surface-container rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+    <div class="flex items-center gap-space-md min-w-0">
+      <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary-container text-primary flex items-center justify-center shrink-0 shadow-sm">
+        <span class="material-symbols-outlined text-[34px] md:text-[40px]">folder_open</span>
+      </div>
+      <div class="flex flex-col min-w-0">
+        <h1 class="font-headline-lg text-headline-lg text-on-surface">कार्यपत्रक पुस्तकालय (Worksheet Library)</h1>
+        <span class="font-label-md text-label-md text-on-surface-variant">सभी कार्यपत्रक यहाँ दिखेंगे • All worksheets appear here</span>
+      </div>
+    </div>
+    <button id="lib-generate-btn" type="button" class="min-h-[52px] px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary/90 active:translate-y-0.5 transition-all flex items-center gap-space-xs">
+      <span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+      <span>नया कार्यपत्रक बनाएं (Generate Worksheet)</span>
+    </button>
+  </div>
+  <div id="generate-panel" class="hidden bg-surface-container-low rounded-xl p-space-md md:p-space-lg shadow-sm flex-col gap-space-md">
+    <div class="flex items-center justify-between gap-space-sm">
+      <div class="flex items-center gap-space-xs">
+        <span class="material-symbols-outlined text-primary text-[24px]">auto_awesome</span>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface">AI कार्यपत्रक जनरेटर (Generate Worksheet)</h2>
+      </div>
+      <button id="gen-close-btn" type="button" class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <label class="block">
+      <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Hindi Prompt (हिंदी प्रॉम्प्ट)</span>
+      <textarea id="gen-ws-prompt" rows="2" class="mt-1 w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-space-sm py-2 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="उदा. पौधों के अंगों पर 4 MCQ प्रश्न बनाओ">पौधों के अंगों पर 4 MCQ प्रश्न बनाओ</textarea>
+    </label>
+    <button id="generate-ws-btn" type="button" class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm active:translate-y-0.5 transition-all flex items-center justify-center gap-space-xs">
+      <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+      <span>Generate Worksheet (कार्यपत्रक बनाएं)</span>
+    </button>
+    <div id="gen-ws-status" class="hidden px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold whitespace-nowrap text-center"></div>
+    <div id="gen-ws-result" class="hidden mt-space-sm p-space-sm rounded-lg bg-surface-bright text-on-surface"></div>
+  </div>
+  <div id="ws-list-loading" class="flex items-center justify-center py-space-xl">
+    <span class="material-symbols-outlined text-primary text-[32px] animate-spin">progress_activity</span>
+    <span class="font-label-md text-label-md text-on-surface-variant ml-2">लोड हो रहा है… (Loading worksheets…)</span>
+  </div>
+  <div id="ws-list-empty" class="hidden flex-col items-center justify-center py-space-xl gap-space-md">
+    <span class="material-symbols-outlined text-on-surface-variant/40 text-[64px]">inventory_2</span>
+    <p class="font-headline-sm text-headline-sm text-on-surface-variant">अभी कोई कार्यपत्रक नहीं है (No worksheets yet)</p>
+    <button id="empty-generate-btn" type="button" class="min-h-[48px] px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md active:translate-y-0.5 transition-all flex items-center gap-space-xs">
+      <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+      <span>कार्यपत्रक बनाएं (Generate Worksheet)</span>
+    </button>
+  </div>
+  <div id="ws-list-grid" class="hidden grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md"></div>
+</div>
+<!-- ======================== STUDENT WORKSHEET VIEW (shown when worksheet_id in URL) ======================== -->
+<div id="student-view" class="hidden flex-col gap-space-lg">
+<!-- Top Identity Bar & Child Meta -->
+<div class="bg-surface-container rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-secondary-container text-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[34px] md:text-[40px]" style="font-variation-settings: 'FILL' 1;">face_6</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate" id="student-name">रोहन मुर्मू (Rohan Murmu)</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Roll No: 14
+            </span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold">
+            Primary Class 3-A • उत्क्रमित प्राथमिक विद्यालय (Upgraded Primary School)
+          </span>
+</div>
+</div>
+<!-- Quick Audio Setting Pill -->
+<div class="flex items-center gap-space-xs bg-surface-container-highest px-space-sm py-1.5 rounded-full self-stretch md:self-auto justify-between md:justify-start">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">record_voice_over</span>
+<span>सहज ऑडियो सहायता चालू</span>
+</div>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+</div>
+<!-- Worksheet Header & Progress Track -->
+<div class="bg-surface-container-low rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+<span id="ws-eyebrow">पर्यावरण अध्ययन • कार्यपत्रक 04 (EVS Worksheet)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mt-0.5" id="ws-title">
+            पौधों के भाग / ᱫᱟᱨᱮ ᱨᱮᱱᱟᱜ ᱦᱟᱹᱴᱤᱧ <span class="font-body-md text-body-md text-on-surface-variant font-normal">(Parts of a Plant)</span>
+</h1>
+</div>
+<!-- Question Counter Badge -->
+<div class="flex items-center gap-space-xs self-start lg:self-center bg-surface-container-high px-space-md py-2 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-primary text-[22px]">quiz</span>
+<span class="font-label-lg text-label-lg font-bold" id="q-counter">प्रश्न 2 of 10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="q-counter-en">(Question 2 of 10)</span>
+</div>
+</div>
+<!-- Dual Script Friendly Progress Bar -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="w-full bg-surface-container-highest h-4 rounded-full overflow-hidden p-0.5 flex items-center">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500 flex items-center justify-end pr-1" style="width: 20%;" id="progress-fill">
+<div class="w-2 h-2 rounded-full bg-on-primary-container"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span>शुरुआत (Start)</span>
+<span class="font-bold text-primary" id="progress-label">20% पूरा (Completed)</span>
+<span>समाप्ति (Finish)</span>
+</div>
+</div>
+</div>
+<!-- Main Question Slate Card (Warm Tactile Blackboard Inspiration) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Top Ochre Accent Stripe -->
+<div class="h-2 w-full bg-primary-container"></div>
+<div class="p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<!-- Dual Audio Trigger Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">hearing</span>
+<span>आवाज़ सुनकर उत्तर चुनें</span>
+</div>
+<button class="group flex items-center gap-space-sm bg-tertiary hover:bg-tertiary-container text-on-tertiary px-space-md py-2.5 rounded-lg shadow-sm active:translate-y-0.5 transition-all" id="santhali-audio-btn" type="button">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">volume_up</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-bold">🔊 संथाली में सुनें (Listen in Santhali)</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed opacity-90">ᱥᱟᱱᱛᱟᱲᱤ ᱛᱮ ᱟᱧᱡᱚᱢ ᱢᱮ</span>
+</div>
+</button>
+</div>
+<!-- Question Prompt in Hindi & Santhali -->
+<div class="bg-surface-container-low rounded-xl p-space-md md:p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shrink-0" id="q-num">
+              2
+            </span>
+<div class="flex flex-col gap-1.5">
+<p class="font-headline-md text-headline-md text-on-surface leading-snug" id="q-hi">
+                पौधे का कौन सा भाग उसे मिट्टी में मजबूती से थामे रखता है?
+              </p>
+<p class="font-headline-sm text-headline-sm text-secondary font-semibold" id="q-sat">
+                ᱫᱟᱨᱮ ᱨᱮᱱᱟᱜ ᱚᱠᱟ ᱦᱟᱹᱴᱤᱧ ᱦᱟᱥᱟ ᱨᱮ ᱠᱮᱴᱮᱡ ᱛᱮ ᱥᱟᱵ ᱫᱚᱦᱚᱭᱟ?
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant italic" id="q-en">
+                "Which part holds the plant firmly in the soil?"
+              </p>
+</div>
+</div>
+</div>
+<!-- Four Interactive Answer Choice Cards -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">
+            सही उत्तर पर उंगली से टैप करें (Tap your answer):
+          </span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs" id="answer-options-grid">
+<!-- Option A: SELECTED (Root) -->
+<button class="answer-option text-left relative bg-secondary-container/40 rounded-xl p-space-md md:p-space-lg flex items-center justify-between gap-space-md shadow-sm transition-all cursor-pointer min-h-[104px]" data-option="A" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<!-- Illustrated Botanical Badge -->
+<div class="w-16 h-16 rounded-xl bg-secondary-container text-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[38px]" style="font-variation-settings: 'FILL' 1;">nature</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-secondary">A.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">जड़</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">ᱨᱮᱦᱮᱫ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(Root - Holds tree in earth)</span>
+</div>
+</div>
+<!-- Selection Checkmark Node -->
+<div class="option-check w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">check</span>
+</div>
+</button>
+<!-- Option B: Leaf -->
+<button class="answer-option text-left relative bg-surface-container rounded-xl p-space-md md:p-space-lg flex items-center justify-between gap-space-md shadow-sm hover:bg-surface-container-high transition-all cursor-pointer min-h-[104px]" data-option="B" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[38px]">eco</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant">B.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">पत्ती</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">ᱥᱟᱠᱟᱢ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(Leaf - Prepares food)</span>
+</div>
+</div>
+<div class="option-check w-10 h-10 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+</button>
+<!-- Option C: Flower -->
+<button class="answer-option text-left relative bg-surface-container rounded-xl p-space-md md:p-space-lg flex items-center justify-between gap-space-md shadow-sm hover:bg-surface-container-high transition-all cursor-pointer min-h-[104px]" data-option="C" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[38px]">local_florist</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant">C.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">फूल</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">ᱵᱟᱦᱟ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(Flower - Attracts bees)</span>
+</div>
+</div>
+<div class="option-check w-10 h-10 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+</button>
+<!-- Option D: Fruit -->
+<button class="answer-option text-left relative bg-surface-container rounded-xl p-space-md md:p-space-lg flex items-center justify-between gap-space-md shadow-sm hover:bg-surface-container-high transition-all cursor-pointer min-h-[104px]" data-option="D" type="button">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-16 h-16 rounded-xl bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[38px]">nutrition</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface-variant">D.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">फल</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">ᱡᱚ</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(Fruit - Contains seeds)</span>
+</div>
+</div>
+<div class="option-check w-10 h-10 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Student Encouragement Feedback Banner -->
+<div class="bg-secondary-container/30 rounded-lg p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">sentiment_satisfied</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium" id="encourage-text">
+            शाबाश! आपने विकल्प चुना है। आप उत्तर बदलने के लिए किसी भी दूसरे डिब्बे पर टैप कर सकते हैं।
+          </p>
+</div>
+</div>
+</div>
+<!-- Result Card (hidden until submission) -->
+<div id="result-card" class="hidden bg-surface-container-low rounded-xl p-space-md md:p-space-lg shadow-sm flex-col gap-space-md">
+  <div class="flex items-center gap-space-sm">
+    <span class="material-symbols-outlined text-primary text-[28px]">emoji_events</span>
+    <h2 class="font-headline-lg text-headline-lg text-on-surface">कार्यपत्रक परिणाम (Worksheet Result)</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md items-stretch">
+    <div class="bg-surface-container-high rounded-lg p-space-md flex flex-col items-center justify-center gap-1">
+      <span class="text-4xl font-extrabold text-primary" id="result-score">--</span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant">स्कोर (Score)</span>
+    </div>
+    <div class="bg-surface-container-highest rounded-lg p-space-md flex flex-col items-center justify-center gap-1">
+      <span class="text-4xl font-extrabold text-secondary" id="result-count">0/0</span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant">सही उत्तर (Correct Answers)</span>
+    </div>
+    <div class="bg-primary-container/20 rounded-lg p-space-md flex items-center justify-center">
+      <p class="font-body-md text-body-md text-on-surface text-center" id="result-message"></p>
+    </div>
+  </div>
+  <div id="result-concepts" class="flex flex-col gap-space-xs"></div>
+  <div class="flex items-center gap-space-xs">
+    <span class="material-symbols-outlined text-[18px] text-tertiary">auto_awesome</span>
+    <span id="result-ai-status" class="font-label-sm text-label-sm font-bold px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant">AI Analysis: Standard Scoring</span>
+  </div>
+  <div class="flex flex-col sm:flex-row items-stretch gap-space-sm">
+    <button id="restart-btn" type="button" class="min-h-[48px] px-space-lg rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold shadow-sm active:translate-y-0.5 transition-all">फिर से शुरू करें (Restart)</button>
+    <button id="view-analytics-btn" type="button" class="min-h-[48px] px-space-lg rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md active:translate-y-0.5 transition-all">विश्लेषण देखें (View Analytics)</button>
+  </div>
+</div>
+<!-- Navigation & Bottom Actions -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md py-space-xs">
+<!-- Previous Step Button -->
+<button class="min-h-[52px] px-space-lg rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-sm hover:bg-surface-variant active:translate-y-0.5 transition-all" id="prev-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+<span>◀ पिछला (Previous)</span>
+</button>
+<div class="flex flex-col-reverse sm:flex-row items-stretch sm:items-center gap-space-md">
+<!-- Direct Final Submit Button (Corner prominence) -->
+<button class="min-h-[52px] px-space-md rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md hover:bg-secondary/90 active:translate-y-0.5 transition-all" id="submit-sheet-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+<span>कार्यपत्रक जमा करें (Submit Worksheet ✓)</span>
+</button>
+<!-- Next Question Primary Marigold Push Action -->
+<button class="min-h-[56px] px-space-xl rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md hover:bg-primary/90 active:translate-y-0.5 transition-all" id="next-btn" type="button">
+<span>अगला प्रश्न (Next Question)</span>
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Clarifying Child-Safety & Offline Sync Indicator -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">cloud_sync</span>
+<span class="font-label-sm text-label-sm font-semibold">
+          Simple Offline Sync Enabled • इंटरनेट न होने पर भी जवाब सुरक्षित हैं
+        </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm">
+          No student live chat or distracting feeds • सुरक्षित प्राथमिक बाल परिवेश
+        </span>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function() {
+  const API = window.BhashaSetuAPI;
+  const params = new URLSearchParams(location.search);
+  const worksheetId = params.get('worksheet_id');
+  const studentId = params.get('student_id') || 'S-1002';
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const toDev = (n) => String(n).replace(/[0-9]/g, (d) => '\u0966\u0967\u0968\u0969\u096a\u096b\u096c\u096d\u096e\u096f'[+d]);
+
+  const VOCAB = {
+    root: { hi: '\u091c\u0921\u093c', sat: '\u1c68\u1c65\u1c6f\u1c68\u1c6b', icon: 'nature' },
+    stem: { hi: '\u0924\u0928\u093e', sat: '\u1c53\u1c65\u1c68', icon: 'vertical_align_center' },
+    leaf: { hi: '\u092a\u0924\u094d\u0924\u0940', sat: '\u1c60\u1c61\u1c58\u1c61\u1c6d', icon: 'eco' },
+    flower: { hi: '\u092b\u0942\u0932', sat: '\u1c55\u1c61\u1c6f', icon: 'local_florist' },
+    water: { hi: '\u092a\u093e\u0928\u0940', sat: '\u1c49\u1c68\u1c5c', icon: 'water_drop' },
+    sunlight: { hi: '\u0927\u0942\u092a', sat: '\u1c60\u1c62\u1c69\u1c6b\u1c6d', icon: 'wb_sunny' },
+    fruit: { hi: '\u092b\u0932', sat: '', icon: 'nutrition' },
+    seed: { hi: '\u092c\u0940\u091c', sat: '', icon: 'grain' },
+    petal: { hi: '\u092a\u0902\u0916\u0941\u0921\u093c\u0940', sat: '', icon: 'shopping_basket' },
+  };
+  const PROMPT_HI = {
+    root: '\u092a\u094c\u0927\u0947 \u0915\u093e \u0915\u094c\u0928 \u0938\u093e \u092d\u093e\u0917 \u0909\u0938\u0947 \u092e\u093f\u091f\u094d\u091f\u0940 \u092e\u0947\u0902 \u092e\u091c\u092c\u0942\u0924\u0940 \u0938\u0947 \u0925\u093e\u092e\u0947 \u0930\u0916\u0924\u093e \u0939\u0948?',
+    stem: '\u092a\u094c\u0927\u0947 \u0915\u093e \u0915\u094c\u0928 \u0938\u093e \u092d\u093e\u0917 \u091c\u0921\u093c\u094b\u0902 \u0938\u0947 \u092a\u093e\u0928\u0940 \u0915\u094b \u092a\u094c\u0927\u0947 \u0915\u0947 \u092c\u093e\u0915\u0940 \u0939\u093f\u0938\u094d\u0938\u094b\u0902 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u093e\u0924\u093e \u0939\u0948?',
+    leaf: '\u092a\u094c\u0927\u0947 \u0915\u093e \u0915\u094c\u0928 \u0938\u093e \u092d\u093e\u0917 \u092a\u094c\u0927\u0947 \u0915\u0947 \u0932\u093f\u090f \u0905\u092a\u0928\u093e \u092d\u094b\u091c\u0928 \u092c\u0928\u093e\u0924\u093e \u0939\u0948?',
+    flower: '\u092a\u094c\u0927\u0947 \u0915\u093e \u0915\u094c\u0928 \u0938\u093e \u092d\u093e\u0917 \u092c\u0940\u091c \u092c\u0928\u093e\u0924\u093e \u0939\u0948?',
+    fruit: '\u092c\u0940\u091c\u094b\u0902 \u0915\u094b \u0905\u092a\u0928\u0947 \u0905\u0902\u0926\u0930 \u0915\u094c\u0928 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0930\u0916\u0924\u093e \u0939\u0948?',
+    seed: '\u092c\u0940\u091c \u0938\u0947 \u0928\u092f\u093e \u092a\u094c\u0927\u093e \u0915\u0948\u0938\u0947 \u092c\u0928\u0924\u093e \u0939\u0948?',
+    petal: '\u092b\u0942\u0932 \u0915\u093e \u0938\u092c\u0938\u0947 \u091a\u092e\u0915\u0940\u0932\u093e \u0939\u093f\u0938\u094d\u0938\u093e \u0915\u094c\u0928 \u0938\u093e \u0939\u094b\u0924\u093e \u0939\u0948?',
+    sunlight: '\u092a\u094c\u0927\u094b\u0902 \u0915\u094b \u092c\u0922\u093c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u091a\u093e\u0939\u093f\u090f?',
+    water: '\u092a\u094c\u0927\u094b\u0902 \u0915\u094b \u091c\u0940\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u092a\u0940\u0928\u0947 \u0915\u094b \u091a\u093e\u0939\u093f\u090f?',
+  };
+
+  /* ======== MODE DECISION: library vs student ======== */
+  if (!worksheetId) {
+    $('library-view').classList.remove('hidden');
+    $('library-view').classList.add('flex');
+    initLibrary();
+  } else {
+    $('student-view').classList.remove('hidden');
+    $('student-view').classList.add('flex');
+    initStudent();
+  }
+
+  /* ==================== LIBRARY MODE ==================== */
+  function initLibrary() {
+    const genBtn = $('lib-generate-btn');
+    const emptyGenBtn = $('empty-generate-btn');
+    const genPanel = $('generate-panel');
+    const genCloseBtn = $('gen-close-btn');
+    const genWsBtn = $('generate-ws-btn');
+    const genStatus = $('gen-ws-status');
+    const genResult = $('gen-ws-result');
+    const listGrid = $('ws-list-grid');
+    const listLoading = $('ws-list-loading');
+    const listEmpty = $('ws-list-empty');
+
+    function openGenPanel() { genPanel.classList.remove('hidden'); genPanel.classList.add('flex'); }
+    function closeGenPanel() { genPanel.classList.add('hidden'); genPanel.classList.remove('flex'); }
+
+    if (genBtn) genBtn.addEventListener('click', openGenPanel);
+    if (emptyGenBtn) emptyGenBtn.addEventListener('click', openGenPanel);
+    if (genCloseBtn) genCloseBtn.addEventListener('click', closeGenPanel);
+
+    /* --- Load worksheet library --- */
+    async function loadLibrary() {
+      listLoading.classList.remove('hidden');
+      let list;
+      try {
+        list = await API.get('/api/worksheets');
+      } catch (err) {
+        listLoading.classList.add('hidden');
+        listEmpty.classList.remove('hidden');
+        listEmpty.classList.add('flex');
+        return;
+      }
+      listLoading.classList.add('hidden');
+      if (!list || !list.length) {
+        listEmpty.classList.remove('hidden');
+        listEmpty.classList.add('flex');
+        return;
+      }
+      listGrid.classList.remove('hidden');
+      listGrid.innerHTML = '';
+      list.forEach((ws) => {
+        const qCount = (ws.questions || []).length;
+        const card = document.createElement('div');
+        card.className = 'bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between';
+        card.innerHTML =
+          '<div class="space-y-space-sm">' +
+            '<div class="flex items-start justify-between">' +
+              '<div class="flex items-center gap-space-xs">' +
+                '<span class="material-symbols-outlined text-primary text-[22px]">' + (ws.generated ? 'auto_awesome' : 'quiz') + '</span>' +
+                '<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">' + esc(ws.subject || 'EVS') + '</span>' +
+              '</div>' +
+              (ws.generated ? '<span class="px-2 py-0.5 rounded-full bg-secondary-container text-secondary font-label-sm text-label-sm font-bold">AI</span>' : '') +
+            '</div>' +
+            '<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">' + esc(ws.title || ws._id) + '</h3>' +
+            '<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">' +
+              '<span class="material-symbols-outlined text-[16px]">quiz</span>' +
+              '<span>' + qCount + ' questions</span>' +
+            '</div>' +
+          '</div>' +
+          '<div class="flex flex-wrap gap-space-xs pt-space-sm">' +
+            '<button data-action="open" data-id="' + esc(ws._id) + '" type="button" class="px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">' +
+              '<span class="material-symbols-outlined text-[16px]">visibility</span>Open</button>' +
+            '<button data-action="assign" data-id="' + esc(ws._id) + '" type="button" class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">' +
+              '<span class="material-symbols-outlined text-[16px]">send_to_mobile</span>Assign</button>' +
+          '</div>';
+        listGrid.appendChild(card);
+      });
+      listGrid.addEventListener('click', function(e) {
+        const btn = e.target.closest('[data-action]');
+        if (!btn) return;
+        const action = btn.getAttribute('data-action');
+        const id = btn.getAttribute('data-id');
+        if (action === 'open') {
+          window.location.href = '/worksheet?worksheet_id=' + encodeURIComponent(id) + '&student_id=' + encodeURIComponent(studentId) + '&mode=demo-student';
+        } else if (action === 'assign') {
+          API.post('/api/worksheets/assign', { worksheet_id: id, class_name: 'Class 3' })
+            .then(() => { alert('कार्यपत्रक आवंटित हुआ! (Worksheet assigned to Class 3)'); })
+            .catch((err) => { alert('Assign failed: ' + (err.message || err)); });
+        }
+      });
+    }
+    loadLibrary();
+
+    /* --- Generate worksheet --- */
+    if (genWsBtn) {
+      genWsBtn.addEventListener('click', function() {
+        const promptInput = $('gen-ws-prompt');
+        const promptText = (promptInput ? promptInput.value : '').trim() || '\u092a\u094c\u0927\u094b\u0902 \u0915\u0947 \u0905\u0902\u0917\u094b\u0902 \u092a\u0930 4 MCQ \u092a\u094d\u0930\u0936\u094d\u0928 \u092c\u0928\u093e\u0913';
+        genWsBtn.disabled = true;
+        genWsBtn.style.opacity = 0.6;
+        genStatus.classList.remove('hidden');
+        genStatus.textContent = 'Generating worksheet with Qwen\u2026';
+        genStatus.className = 'px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold whitespace-nowrap text-center bg-tertiary-fixed-dim text-on-tertiary';
+        genResult.classList.add('hidden');
+
+        API.post('/api/worksheets/generate', {
+          prompt: promptText,
+          grade_level: 3,
+          difficulty: 'medium',
+          lesson: 'lesson-parts-of-a-plant',
+          subject: 'Environmental Studies',
+        }).then(function(res) {
+          genWsBtn.disabled = false;
+          genWsBtn.style.opacity = 1;
+          const label = API.getAIStatusLabel(res);
+          genStatus.textContent = (label && label.status === 'real')
+            ? 'Generated using Ollama + Qwen'
+            : 'Generated using fallback';
+          genStatus.className = 'px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold whitespace-nowrap text-center ' +
+            (label && label.status === 'real' ? 'bg-secondary text-on-secondary' : 'bg-surface-container-highest text-on-surface-variant');
+          genResult.classList.remove('hidden');
+          genResult.innerHTML =
+            '<div class="font-label-sm text-label-sm text-on-surface-variant">Generated ' + ((res.questions||[]).length) + ' questions for "' + esc(res.title || 'worksheet') + '".</div>' +
+            '<div class="flex flex-wrap gap-space-xs pt-space-sm">' +
+              '<button data-action="open" data-id="' + esc(res.worksheet_id) + '" type="button" class="px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">visibility</span>Open</button>' +
+              '<button data-action="assign" data-id="' + esc(res.worksheet_id) + '" type="button" class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">send_to_mobile</span>Assign</button>' +
+            '</div>';
+          genResult.addEventListener('click', function(e) {
+            const btn = e.target.closest('[data-action]');
+            if (!btn) return;
+            if (btn.getAttribute('data-action') === 'open') {
+              window.location.href = '/worksheet?worksheet_id=' + encodeURIComponent(btn.getAttribute('data-id')) + '&student_id=' + encodeURIComponent(studentId) + '&mode=demo-student';
+            } else if (btn.getAttribute('data-action') === 'assign') {
+              API.post('/api/worksheets/assign', { worksheet_id: btn.getAttribute('data-id'), class_name: 'Class 3' })
+                .then(() => { alert('कार्यपत्रक आवंटित हुआ! (Worksheet assigned to Class 3)'); })
+                .catch((err) => { alert('Assign failed: ' + (err.message || err)); });
+            }
+          });
+          loadLibrary();
+        }).catch(function(err) {
+          genWsBtn.disabled = false;
+          genWsBtn.style.opacity = 1;
+          genStatus.textContent = 'Unable to generate worksheet. Please try again.';
+          genStatus.className = 'px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold whitespace-nowrap text-center bg-error-container text-error';
+        });
+      });
+    }
+  }
+
+  /* ==================== STUDENT WORKSHEET MODE ==================== */
+  function initStudent() {
+    const mode = params.get('mode') || 'demo-student';
+    const toDev2 = (n) => String(n).replace(/[0-9]/g, (d) => '\u0966\u0967\u0968\u0969\u096a\u096b\u096c\u096d\u096e\u096f'[+d]);
+    let questions = [];
+    let current = 0;
+    let answers = {};
+
+    function renderQuestion() {
+      const q = questions[current];
+      const pct = Math.round(((current + 1) / questions.length) * 100);
+      $('q-num').textContent = toDev2(current + 1);
+      $('q-counter').textContent = '\u092a\u094d\u0930\u0936\u094d\u0928 ' + toDev2(current + 1) + ' of ' + toDev2(questions.length);
+      $('q-counter-en').textContent = '(Question ' + (current + 1) + ' of ' + questions.length + ')';
+      $('progress-fill').style.width = pct + '%';
+      $('progress-label').textContent = pct + '% \u092a\u0942\u0930\u093e (Completed)';
+      $('q-hi').textContent = PROMPT_HI[q.concept] || q.prompt;
+      $('q-sat').textContent = '';
+      $('q-sat').style.display = 'none';
+      $('q-en').innerHTML = '&quot;' + esc(q.prompt) + '&quot;';
+      const grid = $('answer-options-grid');
+      grid.innerHTML = '';
+      q.options.forEach((opt, idx) => {
+        const v = VOCAB[opt.toLowerCase()] || {};
+        const letter = String.fromCharCode(65 + idx);
+        const sel = answers[q.id] === opt;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'answer-option text-left relative rounded-xl p-space-md md:p-space-lg flex items-center justify-between gap-space-md shadow-sm transition-all cursor-pointer min-h-[104px] ' + (sel ? 'bg-secondary-container/40' : 'bg-surface-container hover:bg-surface-container-high');
+        btn.setAttribute('data-option', letter);
+        btn.innerHTML =
+          '<div class="flex items-center gap-space-md min-w-0">' +
+          '<div class="w-16 h-16 rounded-xl ' + (sel ? 'bg-secondary-container text-secondary' : 'bg-surface-container-highest text-on-surface-variant') + ' flex items-center justify-center shrink-0 shadow-sm">' +
+          '<span class="material-symbols-outlined text-[38px]">' + (v.icon || 'eco') + '</span></div>' +
+          '<div class="flex flex-col min-w-0">' +
+          '<div class="flex items-center gap-space-xs">' +
+          '<span class="font-label-lg text-label-lg font-bold ' + (sel ? 'text-secondary' : 'text-on-surface-variant') + '">' + letter + '.</span>' +
+          '<span class="font-headline-sm text-headline-sm text-on-surface font-bold">' + esc(v.hi || opt) + '</span></div>' +
+          (v.sat ? '<span class="font-headline-sm text-headline-sm text-secondary font-bold">' + esc(v.sat) + '</span>' : '') +
+          '<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(' + esc(opt) + ')</span>' +
+          '</div></div>' +
+          '<div class="option-check w-10 h-10 rounded-full ' + (sel ? 'bg-secondary text-on-secondary' : 'bg-surface-container-highest text-transparent') + ' flex items-center justify-center shrink-0">' +
+          '<span class="material-symbols-outlined text-[26px]">check</span></div>';
+        btn.addEventListener('click', () => { selectOption(q.id, opt, grid); });
+        grid.appendChild(btn);
+      });
+      $('prev-btn').disabled = current === 0;
+      $('prev-btn').classList.toggle('opacity-40', current === 0);
+      $('next-btn').disabled = current === questions.length - 1;
+      $('next-btn').classList.toggle('opacity-40', current === questions.length - 1);
+      const ripple = $('santhali-audio-btn');
+      ripple.classList.add('scale-95', 'bg-tertiary-container');
+      setTimeout(() => ripple.classList.remove('scale-95', 'bg-tertiary-container'), 250);
+    }
+
+    function selectOption(qid, opt, grid) {
+      answers[qid] = opt;
+      renderDots(grid);
+    }
+
+    function renderDots(grid) {
+      Array.from(grid.children).forEach((el) => {
+        const letter = el.getAttribute('data-option');
+        const idx = letter.charCodeAt(0) - 65;
+        const opt = questions[current].options[idx];
+        const sel = answers[questions[current].id] === opt;
+        el.classList.toggle('bg-secondary-container/40', sel);
+        el.classList.toggle('bg-surface-container', !sel);
+        const badge = el.querySelector('div:first-child > div:first-child');
+        if (badge) {
+          badge.classList.toggle('bg-secondary-container', sel);
+          badge.classList.toggle('text-secondary', sel);
+          badge.classList.toggle('bg-surface-container-highest', !sel);
+          badge.classList.toggle('text-on-surface-variant', !sel);
+        }
+        const check = el.querySelector('.option-check');
+        if (check) {
+          check.classList.toggle('bg-secondary', sel);
+          check.classList.toggle('text-on-secondary', sel);
+          check.classList.toggle('bg-surface-container-highest', !sel);
+          check.classList.toggle('text-transparent', !sel);
+        }
+      });
+      const left = questions.length - Object.keys(answers).length;
+      $('encourage-text').textContent = left > 0
+        ? (Object.keys(answers).length === 0
+            ? '\u091a\u0932\u093f\u090f \u0936\u0941\u0930\u0942\u090f \u0915\u0930\u0947\u0902! \u0905\u092a\u0928\u093e \u0909\u0924\u094d\u0924\u0930 \u091a\u0941\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u093f\u0938\u0940 \u0921\u093f\u092c\u094d\u092c\u0947 \u092a\u0930 \u091f\u0948\u092a \u0915\u0930\u0947\u0902\u0964 (Tap a box to choose your answer!)'
+            : '\u0936\u093e\u092c\u093e\u0936! ' + left + ' \u092a\u094d\u0930\u0936\u094d\u0928 \u0905\u092d\u0940 \u092c\u093e\u0915\u0940 \u0939\u0948\u0964 (Great! ' + left + ' questions left.)')
+        : '\u0936\u093e\u092c\u093e\u0936! \u0938\u092d\u0940 \u092a\u094d\u0930\u0936\u094d\u0928\u094b\u0902 \u0915\u0947 \u0909\u0924\u094d\u0924\u0930 \u091a\u0941\u0928 \u0932\u093f\u090f \u0939\u0948\u0964 \u0905\u092c " \u0915\u093e\u0930\u094d\u092f\u092a\u0924\u094d\u0930\u0915 \u091c\u092e\u093e \u0915\u0930\u0947\u0902" \u0926\u092c\u093e\u090f\u0964 (All answered - tap Submit Worksheet!)';
+    }
+
+    async function loadWorksheet() {
+      let ws;
+      try {
+        ws = await API.get('/api/worksheets/' + worksheetId);
+      } catch (err) {
+        $('q-hi').textContent = '\u0915\u093e\u0930\u094d\u092f\u092a\u0924\u094d\u0930\u0915 \u0932\u094b\u0921 \u0928\u0939\u0940\u0902 \u0939\u0941\u0906\u0964 (Worksheet could not be loaded - ' + (err.message || err.status) + ')';
+        return;
+      }
+      const eyebrow = $('ws-eyebrow');
+      if (eyebrow && ws.subject) eyebrow.textContent = ws.subject + ' \u2022 \u0915\u093e\u0930\u094d\u092f\u092a\u0924\u094d\u0930\u0915 (Worksheet)';
+      questions = ws.questions || [];
+      if (!questions.length) { $('q-hi').textContent = '\u0907\u0938 \u0915\u093e\u0930\u094d\u092f\u092a\u0924\u094d\u0930\u0915 \u092e\u0947\u0902 \u0915\u094b\u0908 \u092a\u094d\u0930\u0936\u094d\u0928 \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 (No questions in this worksheet.)'; return; }
+      renderQuestion();
+    }
+
+    function setLoading() {
+      $('q-counter').textContent = '\u0932\u094b\u0921 \u0939\u094b \u0930\u0939\u093e \u0939\u0948\u2026 (Loading)';
+      $('q-hi').textContent = '\u0925\u094b\u0921\u093c\u093e \u0930\u0941\u0915\u093f\u090f\u2026 (Just a moment\u2026)';
+      $('q-en').innerHTML = '&quot;Fetching worksheet\u2026&quot;';
+    }
+
+    async function submitSheet() {
+      const submitBtn = $('submit-sheet-btn');
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = 0.5;
+      let sub;
+      try {
+        sub = await API.post('/api/worksheets/submit', { worksheet_id: worksheetId, student_id: studentId, answers: answers });
+      } catch (err) {
+        alert('\u091c\u092e\u093e \u0928\u0939\u0940\u0902 \u0939\u0941\u0906\u0964 (Submission failed - ' + (err.message || err.status) + ')');
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = 1;
+        return;
+      }
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = 1;
+      showResult(sub);
+    }
+
+    function showResult(sub) {
+      const card = $('result-card');
+      card.classList.remove('hidden');
+      card.classList.add('flex');
+      $('result-score').textContent = sub.score_percent + '%';
+      $('result-count').textContent = sub.correct_count + '/' + sub.total_count;
+      const msg = sub.score_percent >= 80
+        ? '\u092c\u0939\u0941\u0924 \u092c\u0922\u093c\u093f\u092f\u093e! \u0906\u092a\u0928\u0947 \u0938\u0940\u0916 \u0932\u093f\u092f\u093e \u0939\u0948\u0964 (Excellent! You have learned it.)'
+        : sub.score_percent >= 50
+          ? '\u0905\u091a\u094d\u091d\u093e \u0915\u093f\u092f\u093e! \u0925\u094b\u0921\u093c\u0940 \u0914\u0930 \u0915\u094b\u0936\u093f\u0936 \u0915\u0930\u0947\u0902\u0964 (Good effort - keep practising!)'
+          : '\u0915\u094b\u0908 \u092c\u093e\u0924 \u0928\u0939\u0940\u0902 - \u0926\u094b\u092c\u093e\u0930\u093e \u0915\u094b\u0936\u093f\u0936 \u0915\u0930\u0947\u0902\u0964 (No problem - try again!)';
+      $('result-message').textContent = msg;
+      const annots = sub.llm_analysis || null;
+      const statusEl = $('result-ai-status');
+      if (statusEl) {
+        let txt = 'AI Analysis: Standard Scoring';
+        let cls = 'bg-surface-container text-on-surface-variant';
+        if (annots) {
+          const realAnnot = Object.keys(annots).map((k) => annots[k]).find((a) => a && a.mode === 'real');
+          const label = realAnnot ? API.getAIStatusLabel(realAnnot) : { text: 'AI Analysis: Fallback', status: 'fallback' };
+          txt = 'AI Analysis: ' + label.text;
+          cls = label.status === 'real' ? 'bg-secondary text-on-secondary' : 'bg-error-container text-error';
+        }
+        statusEl.textContent = txt;
+        statusEl.className = 'font-label-sm text-label-sm font-bold px-space-sm py-1 rounded-full ' + cls;
+      }
+      const box = $('result-concepts');
+      box.innerHTML = '';
+      questions.forEach((q) => {
+        const res = sub.concept_results && sub.concept_results[q.concept] === 'correct';
+        const v = VOCAB[q.concept] || {};
+        const row = document.createElement('div');
+        row.className = 'flex items-center gap-space-sm bg-' + (res ? 'secondary-container' : 'error-container') + '/30 rounded-lg px-space-md py-space-sm';
+        row.innerHTML = '<span class="material-symbols-outlined text-[22px] ' + (res ? 'text-secondary' : 'text-error') + '">' + (res ? 'check_circle' : 'cancel') + '</span>' +
+          '<span class="font-label-md text-label-md font-bold text-on-surface">' + esc(v.hi || q.concept) + '</span>' +
+          '<span class="font-body-sm text-body-sm text-on-surface-variant flex-1">' + (res ? '\u0938\u0939\u0940! (Correct!)' : '\u092b\u093f\u0930 \u0938\u0947 \u0926\u0947\u0916\u0947\u0902 (Review again)') + '</span>' +
+          '<span class="font-label-sm text-label-sm ' + (res ? 'text-secondary' : 'text-error') + '">' + (res ? '\u2713' : '\u2717') + '</span>';
+        box.appendChild(row);
+      });
+      $('restart-btn').addEventListener('click', () => location.reload());
+      $('view-analytics-btn').addEventListener('click', () => {
+        location.href = '/analytics?worksheet_id=' + encodeURIComponent(worksheetId) + '&class_size=30';
+      });
+    }
+
+    $('prev-btn').addEventListener('click', () => { if (current > 0) { current -= 1; renderQuestion(); } });
+    $('next-btn').addEventListener('click', () => { if (current < questions.length - 1) { current += 1; renderQuestion(); } });
+    $('submit-sheet-btn').addEventListener('click', submitSheet);
+
+    const audioBtn = $('santhali-audio-btn');
+    if (audioBtn) {
+      audioBtn.addEventListener('click', () => {
+        audioBtn.classList.add('scale-95', 'bg-tertiary-container');
+        setTimeout(() => audioBtn.classList.remove('scale-95', 'bg-tertiary-container'), 400);
+        const hi = questions[current] && (PROMPT_HI[questions[current].concept] || questions[current].prompt);
+        if (hi && 'speechSynthesis' in window) {
+          const u = new SpeechSynthesisUtterance(hi);
+          u.lang = 'hi-IN';
+          speechSynthesis.cancel();
+          speechSynthesis.speak(u);
+        }
+      });
+    }
+
+    setLoading();
+    loadWorksheet();
+  }
+})();
+</script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-grid-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">BhashaSetu</span><span class="font-body-sm text-body-sm">• Regional Vernacular Bridges for Primary Classrooms</span></div><div class="font-label-sm text-label-sm">© 2024 BhashaSetu Primary Education Platform. All rights reserved.</div></div></footer><script id="nav-router">
+(function () {
+  var ROUTES = { dashboard: '/dashboard', lessons: '/lesson-setup', worksheets: '/worksheet', analytics: '/analytics', dictionary: '/dictionary' };
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest ? e.target.closest('a[data-path]') : null;
+    if (!el) return;
+    var to = ROUTES[el.getAttribute('data-path')];
+    if (!to) return;
+    e.preventDefault();
+    window.location.assign(to);
+  });
+})();
+</script>
+<script id="logout">
+(function () {
+  var avatar = document.querySelector('header .w-8.h-8.rounded-full');
+  if (!avatar) return;
+  avatar.title = 'Logout (बाहर निकलें)';
+  avatar.style.cursor = 'pointer';
+  avatar.addEventListener('click', function () {
+    if (!window.confirm('Log out of BhashaSetu?')) return;
+    try {
+      if (window.BhashaSetuAPI && BhashaSetuAPI.getToken()) {
+        fetch('/api/auth/logout', { method: 'POST', headers: { 'Authorization': 'Bearer ' + BhashaSetuAPI.getToken() }, body: '{}' }).catch(function () {});
+      }
+    } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_token'); } catch (e) {}
+    try { localStorage.removeItem('bhashasetu_teacher'); } catch (e) {}
+    window.location.href = '/';
+  });
+})();
+</script>
+</body></html>

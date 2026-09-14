@@ -1,0 +1,19 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+python-dotenv==1.0.1
+Werkzeug==3.0.3
+requests==2.32.3
+pypdf==5.4.0
+Pillow==11.2.1
+pytesseract==0.3.13
+numpy==2.2.0
+scikit-learn==1.5.1
+pandas==2.2.2
+pytest==8.3.3
+
+# Optional — needed only when APP_MODE=real and wired AI services are used
+# vosk==0.3.45                    # offline Hindi ASR (Vosk model also required)
+# transformers==4.44.0            # NLLB-200 local neural MT
+# torch                           # required by transformers for NLLB-200
+# chromadb==0.5.5                 # vector store for RAG
+# sentence-transformers==3.0.1   # BGE-M3 embeddings for ChromaDB
